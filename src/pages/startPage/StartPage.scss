@@ -1,0 +1,16 @@
+.start-page-div {
+  width: 80vw;
+  height: 60vh;
+  background-color: rgba(196, 193, 20, 0.5);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%; left: 50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
