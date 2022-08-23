@@ -1,12 +1,12 @@
 import StartPage from './pages/startPage/StartPage';
-import SamosvalPage from './pages/technika/SamosvalPage';
+import SamosvalPage from './pages/spectechnikaPage/SpectechnikaPage';
 import UslugiPage from './pages/uslugiPage/UslugiPage';
 import Utils from './utils/Utils';
 
 const routes = {
   '/': StartPage ,
   '/uslugi': UslugiPage ,
-  '/samosval': SamosvalPage ,
+  '/spectehnika': SamosvalPage ,
 };
 
 const router = async () => {

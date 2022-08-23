@@ -1,17 +1,22 @@
-import { data } from '../../state/data';
+import { currentKeyName, prices } from '../../state/data';
+import { changeUrl } from '../../state/functions';
 import './StartPage.scss';
 
 const StartPage = {
   render: async () => {
     const view = `
     <div class="spectehnika" id="specteh">
-    <div>
+    <div class="ekskovatorpogrUpperDiv" data-keyname="ekskovatorpogr">
       Экскаватор- погрузчик
     </div>
-    <div>
-      <a href="#samosval">Самосвал</a>
+    <div class="samosvalUpperDiv" data-keyname="samosval">
+      <p>Самосвал</p>
+      <br/><br/>
+      <img src="../../assets/img/samosval.jpg" alt="" />
+      <br/><br/>
+      <p>Читать далее</p>
     </div>
-    <div>
+    <div data-keyname="bulldozer">
       Бульдозер
     </div>
     <div>
@@ -42,10 +47,35 @@ const StartPage = {
   },
   
   after_render: () => {
-    console.log('startPage after_render');
+    
+    //here we get all prices from innerHTML of divs from the prices section and put them into prices object
+
     const samosvalPreis = document.querySelector('.samosvalPreis');
-    console.log('samosvalPreis--', samosvalPreis.innerHTML);
-    data.setSamosvalPreis = Number(samosvalPreis.innerHTML);  
+    //later with setValue method
+    prices.setSamosvalPreis = Number(samosvalPreis.innerHTML);
+    const ekskovatorpogrPreis = document.querySelector('.ekskovatorpogrPreis');
+    prices.setEkskovatorpogrPreis = Number(ekskovatorpogrPreis.innerHTML);
+    const bulldozerPreis = document.querySelector('.bulldozerPreis');
+    prices.setBulldozerPreis = Number(bulldozerPreis.innerHTML);
+
+    console.log('prices obj--', prices);  
+
+    //here we add eventlisteners (later with delegation) to all our technik divs
+    const samosvalUpperDiv = document.querySelector('.samosvalUpperDiv');
+    const ekskovatorpogrUpperDiv = document.querySelector('.ekskovatorpogrUpperDiv');
+
+    samosvalUpperDiv.addEventListener('click', (event) => {
+      let keyName = event.currentTarget.getAttribute("data-keyname");
+      currentKeyName.setCurrentKeyName = keyName;
+      changeUrl('#spectehnika');
+    });
+
+    ekskovatorpogrUpperDiv.addEventListener('click', (event) => {
+      let keyName = event.currentTarget.getAttribute("data-keyname");
+      currentKeyName.setCurrentKeyName = keyName;
+      changeUrl('#spectehnika');
+    });
+
   },
 };
 

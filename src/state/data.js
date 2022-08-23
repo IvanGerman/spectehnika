@@ -1,11 +1,39 @@
-export const data = {
-  
-  samosvalPreis: 0,
-  
+export const prices = {
+  //key: '',
+  ekskovatorpogr: 0,
+  samosval: 0,
+  bulldozer: 0,
+
+  // set setKey(value) {
+  //   this.key = value;
+  // },
+
+  // set setValue(value) {
+  //   this[this.key] = value
+  // },
+
+  set setEkskovatorpogrPreis(value) {
+    this.ekskovatorpogr = value;
+  },
   set setSamosvalPreis(value) {
-    this.samosvalPreis = value;
+    this.samosval = value;
+  },
+  set setBulldozerPreis(value) {
+    this.bulldozer = value;
   },
 };
+
+export const currentKeyName = {
+  
+  currentKeyName: '',
+  
+  set setCurrentKeyName(value) {
+    this.currentKeyName = value;
+  },
+};
+
+
+//hardcoded data-----------------------------------------------------------------------------------------
 
 export const sectionName = {
   samosval: 'Самосвал',
