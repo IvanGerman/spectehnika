@@ -4,16 +4,14 @@ import UslugiPage from './pages/uslugiPage/UslugiPage';
 import Utils from './utils/Utils';
 
 const routes = {
-  //'/': StartPage ,
+  '/': StartPage ,
   '/uslugi': UslugiPage ,
   '/samosval': SamosvalPage ,
 };
 
 const router = async () => {
-  
-  if (!window.location.hash) { return };
 
-  const content = document.getElementById('mainbody');
+  const content = document.getElementById('root');
 
   const request = Utils.parseRequestURL();
   const parsedURL = request.resource ? `/${request.resource}` : '/';

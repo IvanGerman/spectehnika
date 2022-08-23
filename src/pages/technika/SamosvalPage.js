@@ -10,7 +10,7 @@ const SamosvalPage = {
         <h2>SamosvalPage</h2>
         <br/><br/>
         <p class="samosvalPagePreis"></p>
-        <a href="/">StartPage</a>
+        <a href="#/">StartPage</a>
       </div>
     `;
     return view;
