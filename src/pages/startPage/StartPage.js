@@ -78,13 +78,24 @@ const StartPage = {
     
     //here we get all prices from innerHTML of divs from the prices section and put them into prices object
 
-    const samosvalPreis = document.querySelector('.samosvalPreis');
     //later with setValue method
+    const samosvalPreis = document.querySelector('.samosvalPreis');
     prices.setSamosvalPreis = Number(samosvalPreis.innerHTML);
     const ekskovatorpogrPreis = document.querySelector('.ekskovatorpogrPreis');
     prices.setEkskovatorpogrPreis = Number(ekskovatorpogrPreis.innerHTML);
     const bulldozerPreis = document.querySelector('.bulldozerPreis');
     prices.setBulldozerPreis = Number(bulldozerPreis.innerHTML);
+    
+    const ekskavatorPreis = document.querySelector('.ekskavatorPreis');
+    prices.setEkskavatorPreis = Number(ekskavatorPreis.innerHTML);
+    const frontalPreis = document.querySelector('.frontalPreis');
+    prices.setFrontalPreis = Number(frontalPreis.innerHTML);
+    const avtokranPreis = document.querySelector('.avtokranPreis');
+    prices.setAvtokranPreis = Number(avtokranPreis.innerHTML);
+    const manipulatorPreis = document.querySelector('.manipulatorPreis');
+    prices.setManipulatorPreis = Number(manipulatorPreis.innerHTML);
+    const jamoburPreis = document.querySelector('.jamoburPreis');
+    prices.setJamoburPreis = Number(jamoburPreis.innerHTML);
 
     console.log('prices obj--', prices);  
 
