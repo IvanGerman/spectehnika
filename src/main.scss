@@ -119,25 +119,9 @@ main {
 
 //goes later to StartPage.scss----------------------------------------------
 
-.spectehnika {
-  max-width: 100vw;
-  min-height: 70vh;
-  background-color: rgb(70, 67, 67);
-  border: 1px solid red;
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.spectehnika div {
-  width: 24.5vw;
-  height: 34.9vh;
-  border: 1px solid red;
-}
 
-.samosvalUpperDiv:hover,
-.ekskovatorpogrUpperDiv:hover {
-  cursor: pointer;
-}
+
 
 //----------------------------------------------
 

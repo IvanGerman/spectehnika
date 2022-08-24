@@ -6,33 +6,61 @@ const StartPage = {
   render: async () => {
     const view = `
     <div class="spectehnika" id="specteh">
-    <div class="ekskovatorpogrUpperDiv" data-keyname="ekskovatorpogr">
-      Экскаватор- погрузчик
+    <div class="ekskovatorpogrUpperDiv spectehnikaInnerDiv" data-keyname="ekskovatorpogr">
+      <p>Экскаватор- погрузчик</p>
+      <br/><br/>
+      <img src="../../assets/img/ekskovatorpogr.png" alt="" />
+      <br/><br/>
+      <p>Читать далее</p>
     </div>
-    <div class="samosvalUpperDiv" data-keyname="samosval">
+    <div class="spectehnikaInnerDiv samosvalUpperDiv" data-keyname="samosval">
       <p>Самосвал</p>
       <br/><br/>
       <img src="../../assets/img/samosval.jpg" alt="" />
       <br/><br/>
       <p>Читать далее</p>
     </div>
-    <div data-keyname="bulldozer">
-      Бульдозер
+    <div class="bulldozerUpperDiv spectehnikaInnerDiv" data-keyname="bulldozer">   
+      <p>Бульдозер</p>
+      <br/><br/>
+      <img src="../../assets/img/bulldozer.png" alt="" />
+      <br/><br/>
+      <p>Читать далее</p>
+    </div>
+    <div>  
+      <p>Фронтальный погрузчик</p>
+      <br/><br/>
+      <img src="../../assets/img/frontal.jpg" alt="" />
+      <br/><br/>
+      <p>Читать далее</p>
+    </div>
+    <div> 
+      <p>Экскаватор</p>
+      <br/><br/>
+      <img src="../../assets/img/ekskavator.jpg" alt="" />
+      <br/><br/>
+      <p>Читать далее</p>
+    </div>
+    <div>    
+      <p>Автокран</p>
+      <br/><br/>
+      <img src="../../assets/img/avtokran.jpg" alt="" />
+      <br/><br/>
+      <p>Читать далее</p>
+    </div>
+    <div>    
+      <p>Манипулятор</p>
+      <br/><br/>
+      <img src="../../assets/img/manipulator.jpg" alt="" />
+      <br/><br/>
+      <p>Читать далее</p>
     </div>
     <div>
-      Фронтальный погрузчик
-    </div>
-    <div>
-      Экскаватор
-    </div>
-    <div>
-      Автокран
-    </div>
-    <div>
-      Манипулятор
-    </div>
-    <div>
-      Ямобур
+      <p>Ямобур</p>
+      <br/><br/>
+      <img src="../../assets/img/jamobur.png" alt="" />
+      <br/><br/>
+      <p>Читать далее</p>
     </div>
   </div>
   <div class="uslugi" id="uslug">
@@ -60,21 +88,38 @@ const StartPage = {
 
     console.log('prices obj--', prices);  
 
-    //here we add eventlisteners (later with delegation) to all our technik divs
-    const samosvalUpperDiv = document.querySelector('.samosvalUpperDiv');
-    const ekskovatorpogrUpperDiv = document.querySelector('.ekskovatorpogrUpperDiv');
+    //here we add eventlisteners (with delegation) to all our technik divs
 
-    samosvalUpperDiv.addEventListener('click', (event) => {
-      let keyName = event.currentTarget.getAttribute("data-keyname");
-      currentKeyName.setCurrentKeyName = keyName;
+    const spectehnikaDiv = document.querySelector('.spectehnika');
+    spectehnikaDiv.addEventListener('click', (event) => {
+      let keyName;
+      if (event.target.getAttribute("data-keyname")) {
+        console.log(event.target.getAttribute("data-keyname"));
+        keyName = event.target.getAttribute("data-keyname");
+        currentKeyName.setCurrentKeyName = keyName;
+      } else {
+        console.log('parentElement',event.target.parentElement.getAttribute("data-keyname"));
+        keyName = event.target.parentElement.getAttribute("data-keyname");
+        currentKeyName.setCurrentKeyName = keyName;
+      }
       changeUrl('#spectehnika');
-    });
+    })
 
-    ekskovatorpogrUpperDiv.addEventListener('click', (event) => {
-      let keyName = event.currentTarget.getAttribute("data-keyname");
-      currentKeyName.setCurrentKeyName = keyName;
-      changeUrl('#spectehnika');
-    });
+
+    // const samosvalUpperDiv = document.querySelector('.samosvalUpperDiv');
+    // const ekskovatorpogrUpperDiv = document.querySelector('.ekskovatorpogrUpperDiv');
+
+    // samosvalUpperDiv.addEventListener('click', (event) => {
+    //   let keyName = event.currentTarget.getAttribute("data-keyname");
+    //   currentKeyName.setCurrentKeyName = keyName;
+    //   changeUrl('#spectehnika');
+    // });
+
+    // ekskovatorpogrUpperDiv.addEventListener('click', (event) => {
+    //   let keyName = event.currentTarget.getAttribute("data-keyname");
+    //   currentKeyName.setCurrentKeyName = keyName;
+    //   changeUrl('#spectehnika');
+    // });
 
   },
 };
