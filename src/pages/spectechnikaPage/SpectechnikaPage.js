@@ -5,6 +5,7 @@ import './SpectechnikaPage.scss';
 
 const SpectechnikaPage = {
   render: async () => {
+    document.documentElement.scrollTop = document.body.scrollTop = 900;
     const view = `
       <div class="spectechnikaPage">
         <h2>${sectionName[currentKeyName.currentKeyName]}</h2>
@@ -13,7 +14,7 @@ const SpectechnikaPage = {
         <br/><br/>
         <p class="spectechnikaPagePreis"></p>
         <p class="spectechnikaDeskription">${description[currentKeyName.currentKeyName]}</p>
-        <a href="#/">StartPage</a>
+        <a href="#/"><div class="backBtn">Назад</div></a>
       </div>
     `;
     return view;

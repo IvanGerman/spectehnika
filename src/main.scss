@@ -49,7 +49,10 @@ body {
 }
 
 
-
+.anchorDiv {
+  width: 5vw;
+  margin: 0 auto;
+}
 
 
 
@@ -92,7 +95,11 @@ header a{
   border: 1px solid red;
 }
 
-
+.descriptionDiv {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4vw;
+}
 
 
 

@@ -5,57 +5,60 @@ import './StartPage.scss';
 const StartPage = {
   render: async () => {
     const view = `
-    <div class="spectehnika" id="specteh">
-    <div class="ekskovatorpogrUpperDiv spectehnikaInnerDiv" data-keyname="ekskovatorpogr">
+    <div class="anchorDiv" id="specteh">
+      <h2>Аренда спецтехники</h2>
+    </div>
+    <div class="spectehnika">
+    <div class="ekskovatorpogrUpperDiv" data-keyname="ekskovatorpogr">
       <p>Экскаватор- погрузчик</p>
       <br/><br/>
       <img src="../../assets/img/ekskovatorpogr.png" alt="" />
       <br/><br/>
       <p>Читать далее</p>
     </div>
-    <div class="spectehnikaInnerDiv samosvalUpperDiv" data-keyname="samosval">
+    <div class="samosvalUpperDiv" data-keyname="samosval">
       <p>Самосвал</p>
       <br/><br/>
       <img src="../../assets/img/samosval.jpg" alt="" />
       <br/><br/>
       <p>Читать далее</p>
     </div>
-    <div class="bulldozerUpperDiv spectehnikaInnerDiv" data-keyname="bulldozer">   
+    <div class="bulldozerUpperDiv" data-keyname="bulldozer">   
       <p>Бульдозер</p>
       <br/><br/>
       <img src="../../assets/img/bulldozer.png" alt="" />
       <br/><br/>
       <p>Читать далее</p>
     </div>
-    <div>  
+    <div class="frontalUpperDiv" data-keyname="frontal">  
       <p>Фронтальный погрузчик</p>
       <br/><br/>
       <img src="../../assets/img/frontal.jpg" alt="" />
       <br/><br/>
       <p>Читать далее</p>
     </div>
-    <div> 
+    <div class="ekskavatorUpperDiv" data-keyname="ekskavator"> 
       <p>Экскаватор</p>
       <br/><br/>
       <img src="../../assets/img/ekskavator.jpg" alt="" />
       <br/><br/>
       <p>Читать далее</p>
     </div>
-    <div>    
+    <div class="avtokranUpperDiv" data-keyname="avtokran">    
       <p>Автокран</p>
       <br/><br/>
       <img src="../../assets/img/avtokran.jpg" alt="" />
       <br/><br/>
       <p>Читать далее</p>
     </div>
-    <div>    
+    <div class="manipulatorUpperDiv" data-keyname="manipulator">    
       <p>Манипулятор</p>
       <br/><br/>
       <img src="../../assets/img/manipulator.jpg" alt="" />
       <br/><br/>
       <p>Читать далее</p>
     </div>
-    <div>
+    <div class="jamoburUpperDiv" data-keyname="jamobur">
       <p>Ямобур</p>
       <br/><br/>
       <img src="../../assets/img/jamobur.png" alt="" />
@@ -63,7 +66,10 @@ const StartPage = {
       <p>Читать далее</p>
     </div>
   </div>
-  <div class="uslugi" id="uslug">
+  <div class="anchorDiv" id="uslug">
+    <h2>Наши услуги</h2>
+  </div>
+  <div class="uslugi">
     <div>Планировка участка</div>
     <div>Копка котлованов и траншей</div>
     <div>Демонтаж строений</div>
@@ -73,6 +79,7 @@ const StartPage = {
     `;
     return view;
   },
+
   
   after_render: () => {
     
@@ -85,7 +92,7 @@ const StartPage = {
     prices.setEkskovatorpogrPreis = Number(ekskovatorpogrPreis.innerHTML);
     const bulldozerPreis = document.querySelector('.bulldozerPreis');
     prices.setBulldozerPreis = Number(bulldozerPreis.innerHTML);
-    
+
     const ekskavatorPreis = document.querySelector('.ekskavatorPreis');
     prices.setEkskavatorPreis = Number(ekskavatorPreis.innerHTML);
     const frontalPreis = document.querySelector('.frontalPreis');
