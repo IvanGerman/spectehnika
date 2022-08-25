@@ -10,70 +10,70 @@ const StartPage = {
     </div>
     <div class="spectehnika">
     <div class="ekskovatorpogrUpperDiv" data-keyname="ekskovatorpogr">
-      <p>Экскаватор- погрузчик</p>
-      <br/><br/>
-      <img src="../../assets/img/ekskovatorpogr.png" alt="" />
-      <br/><br/>
-      <p>Читать далее</p>
+      <p class="techName">Экскаватор- погрузчик</p>     
+      <img src="../../assets/img/ekskovatorpogr.png" alt="" />     
+      <p class="chitdalP">Читать далее</p>
     </div>
     <div class="samosvalUpperDiv" data-keyname="samosval">
-      <p>Самосвал</p>
-      <br/><br/>
-      <img src="../../assets/img/samosval.jpg" alt="" />
-      <br/><br/>
-      <p>Читать далее</p>
+      <p class="techName">Самосвал</p>     
+      <img src="../../assets/img/samosval.jpg" alt="" />      
+      <p class="chitdalP">Читать далее</p>
     </div>
     <div class="bulldozerUpperDiv" data-keyname="bulldozer">   
-      <p>Бульдозер</p>
-      <br/><br/>
-      <img src="../../assets/img/bulldozer.png" alt="" />
-      <br/><br/>
-      <p>Читать далее</p>
+      <p class="techName">Бульдозер</p>     
+      <img src="../../assets/img/bulldozer.png" alt="" />     
+      <p class="chitdalP">Читать далее</p>
     </div>
     <div class="frontalUpperDiv" data-keyname="frontal">  
-      <p>Фронтальный погрузчик</p>
-      <br/><br/>
-      <img src="../../assets/img/frontal.jpg" alt="" />
-      <br/><br/>
-      <p>Читать далее</p>
+      <p class="techName">Фронтальный погрузчик</p>    
+      <img src="../../assets/img/frontal.jpg" alt="" />    
+      <p class="chitdalP">Читать далее</p>
     </div>
     <div class="ekskavatorUpperDiv" data-keyname="ekskavator"> 
-      <p>Экскаватор</p>
-      <br/><br/>
-      <img src="../../assets/img/ekskavator.jpg" alt="" />
-      <br/><br/>
-      <p>Читать далее</p>
+      <p class="techName">Экскаватор</p>      
+      <img src="../../assets/img/ekskavator.jpg" alt="" />     
+      <p class="chitdalP">Читать далее</p>
     </div>
     <div class="avtokranUpperDiv" data-keyname="avtokran">    
-      <p>Автокран</p>
-      <br/><br/>
-      <img src="../../assets/img/avtokran.jpg" alt="" />
-      <br/><br/>
-      <p>Читать далее</p>
+      <p class="techName">Автокран</p>     
+      <img src="../../assets/img/avtokran.jpg" alt="" />     
+      <p class="chitdalP">Читать далее</p>
     </div>
     <div class="manipulatorUpperDiv" data-keyname="manipulator">    
-      <p>Манипулятор</p>
-      <br/><br/>
-      <img src="../../assets/img/manipulator.jpg" alt="" />
-      <br/><br/>
-      <p>Читать далее</p>
+      <p class="techName">Манипулятор</p>    
+      <img src="../../assets/img/manipulator.jpg" alt="" />     
+      <p class="chitdalP">Читать далее</p>
     </div>
     <div class="jamoburUpperDiv" data-keyname="jamobur">
-      <p>Ямобур</p>
-      <br/><br/>
-      <img src="../../assets/img/jamobur.png" alt="" />
-      <br/><br/>
-      <p>Читать далее</p>
+      <p class="techName">Ямобур</p>     
+      <img src="../../assets/img/jamobur.png" alt="" />     
+      <p class="chitdalP">Читать далее</p>
     </div>
   </div>
   <div class="anchorDiv" id="uslug">
     <h2>Наши услуги</h2>
   </div>
   <div class="uslugi">
-    <div>Планировка участка</div>
-    <div>Копка котлованов и траншей</div>
-    <div>Демонтаж строений</div>
-    <div>Уборка и вывоз снега</div>
+    <div>
+      <p class="techName">Планировка участка</p>
+      <img src="../../assets/img/planirovka.jpg" alt="" />
+      <p class="chitdalP">Читать далее</p>  
+    </div>
+    <div>
+      <p class="techName">Уборка и вывоз снега</p>
+      <img src="../../assets/img/uborka.jpg" alt="" />
+      <p class="chitdalP">Читать далее</p>
+    </div>
+    <div>
+      <p class="techName">Демонтаж строений</p>
+      <img src="../../assets/img/demontazh.jpg" alt="" />
+      <p class="chitdalP">Читать далее</p>
+    </div>
+    <div>
+      <p class="techName">Копка котлованов и траншей</p>
+      <img src="../../assets/img/kopka.jpg" alt="" />
+      <p class="chitdalP">Читать далее</p>
+    </div>
   </div>
       
     `;
