@@ -5,20 +5,42 @@
 }
 
 .spectechnikaPage h2 {
+  font-size: 2vw;
   text-align: center;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
+.navlinksWrapper {
+  max-width: 100vw;
+  display: flex;
+  margin-bottom: 1vw;
+}
+
+.telWrapper {
+  width: 7vw;
+  height: 11vh;
+  border: 1px solid red;
+}
 .spectechImage {
-  width: 25vw;
-  margin-left: 5vw;
+  width: 32vw;
+  margin-left: 3vw;
   margin-bottom: 1vw;
 }
 
 .navlinks {
-  display: inline-block;
-  margin-left: 40vw;
+  width: 60;
+  margin-left: 28vw;
+}
+
+.navlinksP {
+  font-size: 1.3vw;
+  text-decoration: underline;
+  margin-bottom: 1vw;
+} 
+
+.navlinksP2 {
+  margin-top: 1vw;
 }
 
 .navlinks a {

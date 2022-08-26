@@ -9,23 +9,26 @@ const SpectechnikaPage = {
     const view = `
       <div class="spectechnikaPage">
         <h2>${sectionName[currentKeyName.currentKeyName]}</h2>
-        <img src="${srcPath[currentKeyName.currentKeyName]}" alt="" class="spectechImage"/>
-        <div class="navlinks" >
-          <p class="navlinksP">Спецтехника:</p>
-          <a href="#/">gdgd</a>
-          <a href="#/">gdgd</a>
-          <a href="#/">gdgd</a>
-          <a href="#/">gdgd</a>
-          <a href="#/">gdgd</a>
-          <a href="#/">gdgd</a>
-          <a href="#/">gdgd</a>
-          <a href="#/">gdgd</a>
-          <a href="#/">gdgd</a>
-          <p class="navlinksP">Услуги:</p>
-          <a href="#/">gdgd</a>
-          <a href="#/">gdgd</a>
-          <a href="#/">gdgd</a>
-          <a href="#/">gdgd</a>
+        <div class="navlinksWrapper">
+          <div class="telWrapper">555 555 55 55</div>
+          <img src="${srcPath[currentKeyName.currentKeyName]}" alt="" class="spectechImage"/>
+          <div class="navlinks" >
+            <p class="navlinksP">Спецтехника:</p>
+            <a href="#/">gdgd</a>
+            <a href="#/">gdgd</a>
+            <a href="#/">gdgd</a>
+            <a href="#/">gdgd</a>
+            <a href="#/">gdgd</a>
+            <a href="#/">gdgd</a>
+            <a href="#/">gdgd</a>
+            <a href="#/">gdgd</a>
+            <a href="#/">gdgd</a>
+            <p class="navlinksP navlinksP2">Услуги:</p>
+            <a href="#/">gdgd</a>
+            <a href="#/">gdgd</a>
+            <a href="#/">gdgd</a>
+            <a href="#/">gdgd</a>
+          </div>
         </div>
         <p class="spectechnikaDeskription">${description[currentKeyName.currentKeyName]}</p>
         <p class="spectechnikaPagePreisP">От <span class="spectechnikaPagePreis">2500</span> рублей/час</p>

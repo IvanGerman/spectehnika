@@ -112,10 +112,11 @@ const StartPage = {
     spectehnikaDiv.addEventListener('click', (event) => {
       let keyName;
       if (event.target.getAttribute("data-keyname")) {
-        console.log(event.target.getAttribute("data-keyname"));
+        console.log(event.target.getAttribute("data-keyname"),event.target);
         keyName = event.target.getAttribute("data-keyname");
         currentKeyName.setCurrentKeyName = keyName;
       } else {
+        if (event.target.parentElement.getAttribute("data-keyname") === null) {return};
         console.log('parentElement',event.target.parentElement.getAttribute("data-keyname"));
         keyName = event.target.parentElement.getAttribute("data-keyname");
         currentKeyName.setCurrentKeyName = keyName;
