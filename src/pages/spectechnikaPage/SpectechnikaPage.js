@@ -1,5 +1,6 @@
 //import { SamosvalLogicClass } from "../../components/uslugiComponents/UslugiLogicClass";
 import { currentKeyName, description, prices, sectionName, srcPath } from '../../state/data';
+import { changeUrl } from '../../state/functions';
 import './SpectechnikaPage.scss';
 
 
@@ -18,14 +19,14 @@ const SpectechnikaPage = {
           <img src="${srcPath[currentKeyName.currentKeyName]}" alt="" class="spectechImage"/>
           <div class="navlinks" >
             <p class="navlinksP">Спецтехника:</p>
-            <p href="#/" class="navP">Экскаватор- погрузчик</p>
-            <p href="#/" class="navP">Самосвал</p>
-            <p href="#/" class="navP">Бульдозер</p>
-            <p href="#/" class="navP">Фронтальный погрузчик</p>
-            <p href="#/" class="navP">Экскаватор</p>
-            <p href="#/" class="navP">Автокран</p>
-            <p href="#/" class="navP">Манипулятор</p>
-            <p href="#/" class="navP">Ямобур</p>
+            <p href="#/" class="navP" data-keyname="ekskovatorpogr">Экскаватор- погрузчик</p>
+            <p href="#/" class="navP" data-keyname="samosval">Самосвал</p>
+            <p href="#/" class="navP" data-keyname="bulldozer">Бульдозер</p>
+            <p href="#/" class="navP" data-keyname="frontal">Фронтальный погрузчик</p>
+            <p href="#/" class="navP" data-keyname="ekskavator">Экскаватор</p>
+            <p href="#/" class="navP" data-keyname="avtokran">Автокран</p>
+            <p href="#/" class="navP" data-keyname="manipulator">Манипулятор</p>
+            <p href="#/" class="navP" data-keyname="jamobur">Ямобур</p>
             <p class="navlinksP navlinksP2">Услуги:</p>
             <p href="#/" class="navP">Планировка участка</p>
             <p href="#/" class="navP">Уборка и вывоз снега</p>
@@ -50,20 +51,17 @@ const SpectechnikaPage = {
     spectechnikaPagePreis.innerHTML = prices[currentKeyName.currentKeyName] ;
 
     //delegation
-    const spectehnikaDiv = document.querySelector('.spectehnika');
-    spectehnikaDiv.addEventListener('click', (event) => {
-      let keyName;
-      if (event.target.getAttribute("data-keyname")) {
-        console.log(event.target.getAttribute("data-keyname"),event.target);
-        keyName = event.target.getAttribute("data-keyname");
+    const navlinksDiv = document.querySelector('.navlinks');
+    navlinksDiv.addEventListener('click', (event) => {
+
+      if (event.target.className === 'navP') {
+        let keyName = event.target.getAttribute("data-keyname");
         currentKeyName.setCurrentKeyName = keyName;
-      } else {
-        if (event.target.parentElement.getAttribute("data-keyname") === null) {return};
-        console.log('parentElement',event.target.parentElement.getAttribute("data-keyname"));
-        keyName = event.target.parentElement.getAttribute("data-keyname");
-        currentKeyName.setCurrentKeyName = keyName;
-      }
-      changeUrl('#spectehnika');
+        
+        changeUrl('#spectehnik');
+        changeUrl('#spectehnika');
+         return
+      };
     });
   },
 };
