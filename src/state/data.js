@@ -1,5 +1,6 @@
+let key = '';
+
 export const prices = {
-  //key: '',
   ekskovatorpogr: 0,
   samosval: 0,
   bulldozer: 0,
@@ -8,40 +9,44 @@ export const prices = {
   avtokran: 0,
   manipulator: 0,
   jamobur: 0,
+  planirovka: 0,
+  uborka: 0,
+  demontazh: 0,
+  kopka: 0,
 
   set setKey(value) {
-     this.key = value;
+     key = value;
   },
 
   set setValue(value) {
-    this[this.key] = value
+    this[key] = value
   },
 
-  set setEkskovatorpogrPreis(value) {
-    this.ekskovatorpogr = value;
-  },
-  set setSamosvalPreis(value) {
-    this.samosval = value;
-  },
-  set setBulldozerPreis(value) {
-    this.bulldozer = value;
-  },
+  // set setEkskovatorpogrPreis(value) {
+  //   this.ekskovatorpogr = value;
+  // },
+  // set setSamosvalPreis(value) {
+  //   this.samosval = value;
+  // },
+  // set setBulldozerPreis(value) {
+  //   this.bulldozer = value;
+  // },
 
-  set setEkskavatorPreis(value) {
-    this.ekskavator = value;
-  },
-  set setFrontalPreis(value) {
-    this.frontal = value;
-  },
-  set setAvtokranPreis(value) {
-    this.avtokran = value;
-  },
-  set setManipulatorPreis(value) {
-    this.manipulator = value;
-  },
-  set setJamoburPreis(value) {
-    this.jamobur = value;
-  },
+  // set setEkskavatorPreis(value) {
+  //   this.ekskavator = value;
+  // },
+  // set setFrontalPreis(value) {
+  //   this.frontal = value;
+  // },
+  // set setAvtokranPreis(value) {
+  //   this.avtokran = value;
+  // },
+  // set setManipulatorPreis(value) {
+  //   this.manipulator = value;
+  // },
+  // set setJamoburPreis(value) {
+  //   this.jamobur = value;
+  // },
 };
 
 export const currentKeyName = {
@@ -64,7 +69,11 @@ export const sectionName = {
   frontal: 'Фронтальный погрузчик',
   avtokran: 'Автокран',
   manipulator: 'Манипулятор',
-  jamobur: 'Ямобур'
+  jamobur: 'Ямобур',
+  planirovka: 'Планировка участка',
+  uborka: 'Уборка и вывоз снега',
+  demontazh: 'Демонтаж строений',
+  kopka: 'Копка котлованов и траншей'
 }
 
 export const srcPath = {
@@ -75,7 +84,11 @@ export const srcPath = {
   frontal: '../../assets/img/frontal.jpg',
   avtokran: '../../assets/img/avtokran.jpg',
   manipulator: '../../assets/img/manipulator.jpg',
-  jamobur: '../../assets/img/jamobur.png'
+  jamobur: '../../assets/img/jamobur.png',
+  planirovka: '../../assets/img/planirovka.jpg',
+  uborka: '../../assets/img/uborka.jpg',
+  demontazh: '../../assets/img/demontazh.jpg',
+  kopka: '../../assets/img/kopka.jpg'
   
 }
 
@@ -95,7 +108,15 @@ export const description = {
 
   manipulator: 'У нас есть модели грузоподъемностью борта от 5 тонн до 20 тонн. Среди них модели на базе Hino Ranger, Daewoo, Камаз. Манипулятор- универсальная техника, пригодная для погрузки, транспортировки, разгрузке, поднятию объектов и даже монтажу. Опытный и квалифицированный водитель манипулятора способен быстро и эффективно решить сложную задачу силами своей спецмашины!',
 
-  jamobur: 'Можно заказать ямобуры на базе ISUZU 150, 250, 300, 350, 400, 450, 500, 600 (диаметр шнека); TATRA 250, 300,350, 450, 500, 600, 700 (вездеход). Эта спецтехника предназначена для бурения в грунте неглубоких отверстий, пригодных для проведения коммуникаций, установки ЛЭП, гидрологических поисков, сельскохозяйственных, геологицеских и инженерных работ. Также ямобуры заказывают для бурения свай под фундемент, садово- парковых, благоустроительных работ. Это может быть установка забора, бурение котлованов или скважин.'
+  jamobur: 'Можно заказать ямобуры на базе ISUZU 150, 250, 300, 350, 400, 450, 500, 600 (диаметр шнека); TATRA 250, 300,350, 450, 500, 600, 700 (вездеход). Эта спецтехника предназначена для бурения в грунте неглубоких отверстий, пригодных для проведения коммуникаций, установки ЛЭП, гидрологических поисков, сельскохозяйственных, геологицеских и инженерных работ. Также ямобуры заказывают для бурения свай под фундемент, садово- парковых, благоустроительных работ. Это может быть установка забора, бурение котлованов или скважин.',
+
+  planirovka: 'Планировка участка',
+
+  uborka: 'Уборка и вывоз снега',
+
+  demontazh: 'Демонтаж строений',
+  
+  kopka: 'Копка котлованов и траншей'
 
 }
 

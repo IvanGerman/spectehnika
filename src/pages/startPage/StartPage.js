@@ -54,22 +54,22 @@ const StartPage = {
     <h2>Наши услуги</h2>
   </div>
   <div class="uslugi">
-    <div>
+    <div data-keyname="planirovka">
       <p class="techName">Планировка участка</p>
       <img src="../../assets/img/planirovka.jpg" alt="" />
       <p class="chitdalP">Читать далее</p>  
     </div>
-    <div>
+    <div data-keyname="uborka">
       <p class="techName">Уборка и вывоз снега</p>
       <img src="../../assets/img/uborka.jpg" alt="" />
       <p class="chitdalP">Читать далее</p>
     </div>
-    <div>
+    <div data-keyname="demontazh">
       <p class="techName">Демонтаж строений</p>
       <img src="../../assets/img/demontazh.jpg" alt="" />
       <p class="chitdalP">Читать далее</p>
     </div>
-    <div>
+    <div data-keyname="kopka">
       <p class="techName">Копка котлованов и траншей</p>
       <img src="../../assets/img/kopka.jpg" alt="" />
       <p class="chitdalP">Читать далее</p>
@@ -86,23 +86,32 @@ const StartPage = {
     //here we get all prices from innerHTML of divs from the prices section and put them into prices object
 
     //later with setValue method
-    const samosvalPreis = document.querySelector('.samosvalPreis');
-    prices.setSamosvalPreis = Number(samosvalPreis.innerHTML);
-    const ekskovatorpogrPreis = document.querySelector('.ekskovatorpogrPreis');
-    prices.setEkskovatorpogrPreis = Number(ekskovatorpogrPreis.innerHTML);
-    const bulldozerPreis = document.querySelector('.bulldozerPreis');
-    prices.setBulldozerPreis = Number(bulldozerPreis.innerHTML);
 
-    const ekskavatorPreis = document.querySelector('.ekskavatorPreis');
-    prices.setEkskavatorPreis = Number(ekskavatorPreis.innerHTML);
-    const frontalPreis = document.querySelector('.frontalPreis');
-    prices.setFrontalPreis = Number(frontalPreis.innerHTML);
-    const avtokranPreis = document.querySelector('.avtokranPreis');
-    prices.setAvtokranPreis = Number(avtokranPreis.innerHTML);
-    const manipulatorPreis = document.querySelector('.manipulatorPreis');
-    prices.setManipulatorPreis = Number(manipulatorPreis.innerHTML);
-    const jamoburPreis = document.querySelector('.jamoburPreis');
-    prices.setJamoburPreis = Number(jamoburPreis.innerHTML);
+    const allPriceSpans = document.querySelectorAll('.changecolor');
+    console.log('allPriceSpans--',allPriceSpans);
+    allPriceSpans.forEach((elem) => {
+      prices.setKey = elem.getAttribute("data-key");
+      prices.setValue = Number(elem.innerHTML);
+    })
+
+
+    // const samosvalPreis = document.querySelector('.samosvalPreis');
+    // prices.setSamosvalPreis = Number(samosvalPreis.innerHTML);
+    // const ekskovatorpogrPreis = document.querySelector('.ekskovatorpogrPreis');
+    // prices.setEkskovatorpogrPreis = Number(ekskovatorpogrPreis.innerHTML);
+    // const bulldozerPreis = document.querySelector('.bulldozerPreis');
+    // prices.setBulldozerPreis = Number(bulldozerPreis.innerHTML);
+
+    // const ekskavatorPreis = document.querySelector('.ekskavatorPreis');
+    // prices.setEkskavatorPreis = Number(ekskavatorPreis.innerHTML);
+    // const frontalPreis = document.querySelector('.frontalPreis');
+    // prices.setFrontalPreis = Number(frontalPreis.innerHTML);
+    // const avtokranPreis = document.querySelector('.avtokranPreis');
+    // prices.setAvtokranPreis = Number(avtokranPreis.innerHTML);
+    // const manipulatorPreis = document.querySelector('.manipulatorPreis');
+    // prices.setManipulatorPreis = Number(manipulatorPreis.innerHTML);
+    // const jamoburPreis = document.querySelector('.jamoburPreis');
+    // prices.setJamoburPreis = Number(jamoburPreis.innerHTML);
 
     console.log('prices obj--', prices);  
 
@@ -122,8 +131,26 @@ const StartPage = {
         currentKeyName.setCurrentKeyName = keyName;
       }
       changeUrl('#spectehnika');
-    })
+    });
 
+
+    //here we add eventlisteners (with delegation) to all our uslugi divs
+
+    const uslugiDiv = document.querySelector('.uslugi');
+    uslugiDiv.addEventListener('click', (event) => {
+      let keyName;
+      if (event.target.getAttribute("data-keyname")) {
+        console.log(event.target.getAttribute("data-keyname"),event.target);
+        keyName = event.target.getAttribute("data-keyname");
+        currentKeyName.setCurrentKeyName = keyName;
+      } else {
+        if (event.target.parentElement.getAttribute("data-keyname") === null) {return};
+        console.log('parentElement',event.target.parentElement.getAttribute("data-keyname"));
+        keyName = event.target.parentElement.getAttribute("data-keyname");
+        currentKeyName.setCurrentKeyName = keyName;
+      }
+      changeUrl('#spectehnika');
+    });
 
     // const samosvalUpperDiv = document.querySelector('.samosvalUpperDiv');
     // const ekskovatorpogrUpperDiv = document.querySelector('.ekskovatorpogrUpperDiv');
