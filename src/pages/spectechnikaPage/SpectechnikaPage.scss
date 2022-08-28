@@ -1,7 +1,6 @@
 .spectechnikaPage {
   max-width: 100vw;
   height: 100vh;
-  border: 1px solid red;
 }
 
 .spectechnikaPage h2 {
@@ -85,8 +84,11 @@
 .backBtn {
   width: 4vw;
   height: 5vh;
-  background-color: aquamarine;
   margin: 0 auto;
+}
+
+.backBtnImage {
+  width: 4vw;
 }
 
 .spectechnikaDeskription {

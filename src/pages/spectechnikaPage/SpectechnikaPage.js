@@ -37,7 +37,9 @@ const SpectechnikaPage = {
         <p class="spectechnikaDeskription">${description[currentKeyName.currentKeyName]}</p>
         <p class="spectechnikaPagePreisP">От <span class="spectechnikaPagePreis">2500</span> рублей/час</p>
       
-        <a href="#/"><div class="backBtn">Назад</div></a>
+        <a href="#/"><div class="backBtn">
+          <img src="../../assets/img/backBtn.png" alt="" class="backBtnImage" />
+        </div></a>
       </div>
     `;
     return view;
@@ -58,7 +60,7 @@ const SpectechnikaPage = {
         let keyName = event.target.getAttribute("data-keyname");
         currentKeyName.setCurrentKeyName = keyName;
         
-        changeUrl('#spectehnik');
+        changeUrl('#/');
         changeUrl('#spectehnika');
          return
       };
