@@ -28,10 +28,10 @@ const SpectechnikaPage = {
             <p href="#/" class="navP" data-keyname="manipulator">Манипулятор</p>
             <p href="#/" class="navP" data-keyname="jamobur">Ямобур</p>
             <p class="navlinksP navlinksP2">Услуги:</p>
-            <p href="#/" class="navP">Планировка участка</p>
-            <p href="#/" class="navP">Уборка и вывоз снега</p>
-            <p href="#/" class="navP">Демонтаж строений</p>
-            <p href="#/" class="navP">Копка котлованов и траншей</p>
+            <p href="#/" class="navP" data-keyname="planirovka">Планировка участка</p>
+            <p href="#/" class="navP" data-keyname="uborka">Уборка и вывоз снега</p>
+            <p href="#/" class="navP" data-keyname="demontazh">Демонтаж строений</p>
+            <p href="#/" class="navP" data-keyname="kopka">Копка котлованов и траншей</p>
           </div>
         </div>
         <p class="spectechnikaDeskription">${description[currentKeyName.currentKeyName]}</p>
