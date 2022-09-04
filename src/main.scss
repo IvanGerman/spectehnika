@@ -73,7 +73,7 @@ header {
 }
 
 .headerImage {
-  max-width: 98vw;
+  max-width: 100vw;
 }
 
 .logotip {
@@ -100,6 +100,7 @@ header {
 }
 
 .menu a {
+  margin-top: 1vh;
   font-style: italic;
   font-size: 2.5vw;
   font-weight: 600;
@@ -348,4 +349,15 @@ footer {
 .footFirstP {
   font-size: 1.4vw;
   text-decoration: underline;
+}
+
+
+
+
+//------------------------------------------------------------
+@media screen and (max-width: 420px) {
+  .menu {
+    top: 0vh;
+    right: 2vw;
+  }
 }
