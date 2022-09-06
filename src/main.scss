@@ -82,6 +82,8 @@ header {
   position: absolute;
   top: 7vh;
   left: 7vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .logotip h2 {
@@ -89,6 +91,7 @@ header {
   color: gold;
   -webkit-text-stroke: 0.1px black;
   transition: all ease-in-out 0.5s;
+  margin-top: 2vh;
 }
 
 .menu {
@@ -367,5 +370,25 @@ footer {
 
   .menuDiv {
     margin-top: 0.2vh;
+  }
+
+
+  .description {
+    margin-top: 3vh;
+  }
+
+  .logotip {
+    width: 80vw;
+    position: absolute;
+    top: 14vh;
+    left: 34vw;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .descriptionDiv {
+    flex-direction: column;
+
   }
 }
