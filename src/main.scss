@@ -379,6 +379,7 @@ footer {
 
   .logotip {
     width: 80vw;
+    height: 5vh;
     position: absolute;
     top: 14vh;
     left: 34vw;
@@ -389,6 +390,17 @@ footer {
 
   .descriptionDiv {
     flex-direction: column;
+    margin-left: 0vw;
+    max-width: 100%;
+  }
 
+  .descriptionDiv div {
+    display: grid;
+    justify-content: center;
+  }
+
+  .descriptionDiv div p {
+    font-size: 2vw;
+    text-align: center;
   }
 }
