@@ -98,3 +98,22 @@
   line-height: 1.6vw;
   font-size: 1.2vw;
 }
+
+
+
+//-----------------------------------------------------------------------------------
+
+@media screen and (max-width: 420px) {
+
+  main {
+    max-height: 50vh;
+  } 
+
+  .spectechnikaPage {
+    height: 50vh;
+  }
+
+  .spectechImage {
+    width: 20vw;
+  }
+}

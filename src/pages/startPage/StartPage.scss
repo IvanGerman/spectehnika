@@ -85,3 +85,45 @@
   border: 3px solid rgb(53, 44, 32);
   background-color: rgb(221, 205, 184);
 }
+
+
+
+//------------------------------------------------------------
+@media screen and (max-width: 420px) {
+  
+  .anchorDiv {
+    width: 36vw;
+  }
+
+  .anchorDiv h2 {
+    font-size: 2.8vw;
+  }
+
+  .spectehnika div {
+    width: 45%;
+    height: 20vh;
+  }
+
+  .spectehnika div p {
+    font-size: 2.5vw;
+  }
+
+  .spectehnika div img {
+    width: 20vw;
+  }
+
+
+  .uslugi div {
+    width: 90%;
+    height: 25vh;
+  }
+
+  .uslugi p {
+    font-size: 3vw;
+  }
+
+  .uslugi img {
+    width: 33vw;
+  }
+
+}
