@@ -16,7 +16,9 @@ const SpectechnikaPage = {
             <p>+7 999-999-99-99</p>
             <p class="emailP">spectehnika@mail.ru</p>
           </div>
-          <img src="${srcPath[currentKeyName.currentKeyName]}" alt="" class="spectechImage"/>
+          <div class="spectechImage">
+            <img src="${srcPath[currentKeyName.currentKeyName]}" alt=""/>
+          </div>
           <div class="navlinks" >
             <p class="navlinksP">Спецтехника:</p>
             <p href="#/" class="navP" data-keyname="ekskovatorpogr">Экскаватор- погрузчик</p>
