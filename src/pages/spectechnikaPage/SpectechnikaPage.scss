@@ -18,11 +18,11 @@
 .telWrapper {
   width: 16vw;
   height: 22vh;
-  margin-left: 3vw;
+  margin-left: 5vw;
   display: grid;
   justify-items: center;
-  align-items: center;
-  margin-top: 5vw;
+  //align-items: center;
+  // margin-top: 5vw;
 }
 
 .telWrapper p {
@@ -36,7 +36,7 @@
 
 .spectechImage {
   width: 32vw;
-  margin-left: 3vw;
+  margin-left: 11vw;
   margin-bottom: 1vw;
   display: grid;
   justify-items: center;
@@ -49,7 +49,7 @@
 
 .navlinks {
   width: 60;
-  margin-left: 15vw;
+  margin-left: 5vw;
 }
 
 .navlinksP {
@@ -115,12 +115,16 @@
     font-size: 3vw;
   }
 
-  .telWrapper p {
-    font-size: 2.5vw;
+  .telWrapper {
+    display: none;
+  }
+
+  .navlinksWrapper {
+    flex-direction: column;
   }
 
   .navlinks {
-    margin-left: 4vw;
+    margin: 0 auto;
   }
 
   .navlinksP {
@@ -134,7 +138,7 @@
   }
 
   .spectechImage {
-    margin-left: 11vw;
+    margin: 0 auto;
   }
 
   .spectechnikaDeskription {

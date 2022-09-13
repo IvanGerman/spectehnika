@@ -77,18 +77,18 @@ export const sectionName = {
 }
 
 export const srcPath = {
-  ekskovatorpogr: '../../assets/img/ekskovatorpogr.png',
-  samosval: '../../assets/img/samosval.jpg',
-  bulldozer: '../../assets/img/bulldozer.png',
-  ekskavator: '../../assets/img/ekskavator.jpg',
-  frontal: '../../assets/img/frontal.jpg',
-  avtokran: '../../assets/img/avtokran.jpg',
-  manipulator: '../../assets/img/manipulator.jpg',
-  jamobur: '../../assets/img/jamobur.png',
-  planirovka: '../../assets/img/planirovka.jpg',
-  uborka: '../../assets/img/uborka.jpg',
-  demontazh: '../../assets/img/demontazh.jpg',
-  kopka: '../../assets/img/kopka.jpg'
+  ekskovatorpogr: './assets/img/ekskovatorpogr.png',
+  samosval: './assets/img/samosval.jpg',
+  bulldozer: './assets/img/bulldozer.png',
+  ekskavator: './assets/img/ekskavator.jpg',
+  frontal: './assets/img/frontal.jpg',
+  avtokran: './assets/img/avtokran.jpg',
+  manipulator: './assets/img/manipulator.jpg',
+  jamobur: './assets/img/jamobur.png',
+  planirovka: './assets/img/planirovka.jpg',
+  uborka: './assets/img/uborka.jpg',
+  demontazh: './assets/img/demontazh.jpg',
+  kopka: './assets/img/kopka.jpg'
   
 }
 

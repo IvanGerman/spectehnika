@@ -10,12 +10,9 @@ const SpectechnikaPage = {
     const view = `
       <div class="spectechnikaPage">
         <h2>${sectionName[currentKeyName.currentKeyName]}</h2>
+        <p class="spectechnikaDeskription">${description[currentKeyName.currentKeyName]}</p>
+        <p class="spectechnikaPagePreisP">От <span class="spectechnikaPagePreis">2500</span> рублей/час</p>
         <div class="navlinksWrapper">
-          <div class="telWrapper">
-            <p>+7 (3822) 11-11-11</p>
-            <p>+7 999-999-99-99</p>
-            <p class="emailP">spectehnika@mail.ru</p>
-          </div>
           <div class="spectechImage">
             <img src="${srcPath[currentKeyName.currentKeyName]}" alt=""/>
           </div>
@@ -35,12 +32,14 @@ const SpectechnikaPage = {
             <p href="#/" class="navP" data-keyname="demontazh">Демонтаж строений</p>
             <p href="#/" class="navP" data-keyname="kopka">Копка котлованов и траншей</p>
           </div>
-        </div>
-        <p class="spectechnikaDeskription">${description[currentKeyName.currentKeyName]}</p>
-        <p class="spectechnikaPagePreisP">От <span class="spectechnikaPagePreis">2500</span> рублей/час</p>
-      
+          <div class="telWrapper">
+            <p>+7 (3822) 11-11-11</p>
+            <p>+7 999-999-99-99</p>
+            <p class="emailP">spectehnika@mail.ru</p>
+           </div>
+        </div>  
         <a href="#/"><div class="backBtn">
-          <img src="../../assets/img/backBtn.png" alt="" class="backBtnImage" />
+          <img src="./assets/img/backBtn.png" alt="" class="backBtnImage" />
         </div></a>
       </div>
     `;
