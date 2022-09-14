@@ -106,6 +106,48 @@
 }
 
 
+//-----------------------------------------------------------------------------------
+
+@media screen and (max-width: 768px) {
+
+  .spectechnikaPage h2 {
+    font-size: 3vw;
+  }
+
+  .telWrapper {
+    display: none;
+  }
+
+  .navlinksWrapper {
+    flex-direction: column;
+  }
+
+  .navlinks {
+    margin: 0 auto;
+  }
+
+  .navlinksP {
+    font-size: 2.6vw;
+    margin-bottom: 1.3vh;
+  }
+
+  .navP {
+    font-size: 2vw;
+    margin-bottom: 1.2vh;
+  }
+
+  .spectechImage {
+    margin: 0 auto;
+  }
+
+  .spectechnikaDeskription {
+    font-size: 1.8vw;
+    line-height: 1.6;
+  }
+
+
+}
+
 
 //-----------------------------------------------------------------------------------
 
