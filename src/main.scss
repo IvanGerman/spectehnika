@@ -398,6 +398,12 @@ footer {
     font-size: 3vw;
   }
 
+  //.description section-------------------------------------------
+
+  .descrDivP, .descrP {
+    font-size: 1.3vw;
+  }
+
 }
 
 
@@ -428,6 +434,13 @@ footer {
 
   .menuDiv {
     margin-bottom: 5vh;
+  }
+
+
+  //.description section-------------------------------------------
+
+  .descrDivP, .descrP {
+    font-size: 1.5vw;
   }
 }
 
@@ -566,6 +579,12 @@ footer {
     margin-bottom: 4vh;
   }
 
+
+  //.description section-------------------------------------------
+
+  .descriptionDiv div p {
+    font-size: 2.3vw;
+  }
 }
 
 
@@ -596,6 +615,12 @@ footer {
     margin-bottom: 2.5vh;
   }
 
+
+  //.description section-------------------------------------------
+
+  .descriptionDiv div p {
+    font-size: 2.5vw;
+  }
 }
 
 
@@ -626,6 +651,13 @@ footer {
 
   .menuDiv {
     margin-bottom: 2.5vh;
+  }
+
+  //.description section-------------------------------------------
+
+  .descriptionDiv div p {
+    font-size: 2.7vw;
+    text-align: center;
   }
 }
 
@@ -663,6 +695,13 @@ footer {
 
   .menu1 a, .menu2 a {
     font-size: 3.5vw;
+  }
+
+
+  //.description section-------------------------------------------
+
+  .descriptionDiv div p {
+    font-size: 3vw;
   }
 }
 
@@ -704,11 +743,6 @@ footer {
   .descriptionDiv div {
     display: grid;
     justify-content: center;
-  }
-
-  .descriptionDiv div p {
-    font-size: 2vw;
-    text-align: center;
   }
 
 
