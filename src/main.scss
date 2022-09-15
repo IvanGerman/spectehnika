@@ -95,15 +95,15 @@ header {
 .menu1 {
   width: 20vw;
   position: absolute;
-  top: 11vh;
+  top: 15vh;
   left: 5vw;
 }
 
 .menu2 {
   width: 20vw;
   position: absolute;
-  top: 18vh;
-  right: 5vw;
+  top: 15vh;
+  right: 7vw;
 }
 
 .menu2 a, .menu1 a {
@@ -117,6 +117,7 @@ header {
 
 .menuDiv {
   margin-bottom: 11vh;
+  text-align: center;
 }
 
 .menu1 a:hover,
@@ -199,9 +200,6 @@ main {
 
 #root {
   max-width: 100vw;
-  // background-image: url(./assets/img/bg1.png);
-  // background-size: cover;
-  // background-repeat: no-repeat;
 }
 
 
@@ -258,7 +256,6 @@ main {
 
 .prices {
   max-width: 100vw;
-  //min-height: 80vh;
 }
 
 .pricesH2 {
@@ -365,22 +362,52 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //------------------------------------------------------------
 @media screen and (max-width: 1400px) {
   .menu1 {
     top: 11vh;
-    right: 2vw;
+    left: 5vw;
   }
 
   .menu2 {
     top: 13vh;
-    right: 2vw;
+    right: 5vw;
   }
 
   .menuDiv {
     margin-bottom: 7vh;
   }
+
+  .menu1 a, .menu2 a {
+    font-size: 3vw;
+  }
+
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -391,12 +418,12 @@ footer {
 @media screen and (max-width: 1024px) {
   .menu1 {
     top: 7vh;
-    right: 2vw;
+    left: 4.5vw;
   }
 
   .menu2 {
     top: 9vh;
-    right: 2vw;
+    right: 5vw;
   }
 
   .menuDiv {
@@ -410,22 +437,34 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
 //------------------------------------------------------------
 @media screen and (max-width: 768px) {
   .menu1 {
     top: 5vh;
-    right: 2vw;
+    left: 2vw;
+    width: 25vw;
   }
 
   .menu2 {
     top: 7vh;
-    right: 2vw;
+    right: 5vw;
   }
 
   .menuDiv {
     margin-bottom: 4vh;
   }
 
+  .menu1 a, .menu2 a {
+    font-size: 3.5vw;
+  }
 
   .description {
     margin-top: 3vh;
@@ -503,16 +542,24 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
 //------------------------------------------------------------
 @media screen and (max-width: 550px) {
   .menu1 {
     top: 4vh;
-    right: 2vw;
+    left: 2vw;
   }
 
   .menu2 {
     top: 5vh;
-    right: 2vw;
+    right: 5vw;
   }
 
   .menuDiv {
@@ -524,16 +571,25 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
 //------------------------------------------------------------
 @media screen and (max-width: 468px) {
   .menu1 {
     top: 4vh;
-    right: 2vw;
+    left: 2vw;
   }
 
   .menu2 {
     top: 5vh;
-    right: 2vw;
+    right: 3vw;
   }
 
   .menuDiv {
@@ -544,16 +600,89 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 //------------------------------------------------------------
 @media screen and (max-width: 420px) {
-  .menu1, .menu2 {
-    top: 0.5vh;
-    right: 2vw;
+  .menu1 {
+    top: 3vh;
+    left: 2vw;
+  }
+
+  .menu2 {
+    top: 4vh;
+    right: 3vw;
   }
 
   .menuDiv {
-    margin-top: 0.2vh;
+    margin-bottom: 2.5vh;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------------------------
+@media screen and (max-width: 360px) {
+  .menu1 {
+    top: 1vh;
+    left: 2vw;
+  }
+
+  .menu2 {
+    top: 2vh;
+    right: 3vw;
+  }
+
+  .menuDiv {
+    margin-bottom: 2vh;
+  }
+
+  .menu1 a, .menu2 a {
+    font-size: 3.5vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------------------------
+@media screen and (max-width: 420px) {
 
 
   .description {
