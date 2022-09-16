@@ -37,7 +37,8 @@
 
 
 .anchorDiv {
-  width: 26vw;
+  min-width: 26vw;
+  max-width: 40vw;
   margin: 0 auto;
   padding-top: 3vh;
   padding-bottom: 3vh;

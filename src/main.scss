@@ -43,6 +43,7 @@ img {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -138,7 +139,7 @@ header {
 .descriptionDiv {
   max-width: 90vw;
   margin: 0 auto;
-  margin-left: 11vw;
+  margin-left: 10vw;
   display: flex;
   flex-direction: row;
   column-gap: 9vw;
@@ -333,6 +334,7 @@ footer {
 }
 
 .footDivWrapper {
+  max-width: 100vw;
   height: 30vh;
   display: flex;
   column-gap: 3vw;
@@ -400,6 +402,18 @@ footer {
 
   //.description section-------------------------------------------
 
+  .descriptionDiv {
+    margin-left: 7vw;
+  }
+
+  .logotip {
+    margin-bottom: 1.5vh;
+  }
+
+  .logotip h2 {
+    font-size: 2.2vw;
+  }
+
   .descrDivP, .descrP {
     font-size: 1.3vw;
   }
@@ -439,8 +453,25 @@ footer {
 
   //.description section-------------------------------------------
 
+  .descriptionDiv {
+    margin-left: 5vw;
+  }
+
+  .logotip {
+    margin-bottom: 1vh;
+  }
+
+  .logotip h2 {
+    font-size: 2.3vw;
+  }
+
   .descrDivP, .descrP {
     font-size: 1.5vw;
+  }
+
+  .descrH2 h2 {
+    font-size: 2vw;
+    text-align: center;
   }
 }
 
@@ -483,9 +514,18 @@ footer {
     margin-top: 3vh;
   }
 
+  .descrH2 h2 {
+    font-size: 2.1vw;
+  }
+
   .logotip {
     max-width: 60vw;
     height: 5vh;
+    margin-bottom: 0vh;
+  }
+
+  .logotip h2 {
+    font-size: 2.5vw;
   }
 
 
@@ -582,6 +622,26 @@ footer {
 
   //.description section-------------------------------------------
 
+  .description {
+    margin-top: 1.6vh;
+  }
+
+  .descrH2 {
+    margin-bottom: 0.5vh;
+  }
+
+  .descrH2 h2 {
+    font-size: 2.3vw;
+  }
+
+  .logotip {
+    height: 3.5vh;
+  }
+
+  .logotip h2 {
+    font-size: 2.8vw;
+  }
+
   .descriptionDiv div p {
     font-size: 2.3vw;
   }
@@ -617,6 +677,14 @@ footer {
 
 
   //.description section-------------------------------------------
+
+  .logotip h2 {
+    font-size: 2.9vw;
+  }
+
+  .descrH2 h2 {
+    font-size: 2.5vw;
+  }
 
   .descriptionDiv div p {
     font-size: 2.5vw;
@@ -654,6 +722,14 @@ footer {
   }
 
   //.description section-------------------------------------------
+
+  .description {
+    margin-top: 1.3vh;
+  }
+
+  .logotip h2 {
+    font-size: 3vw;
+  }
 
   .descriptionDiv div p {
     font-size: 2.7vw;
@@ -699,6 +775,21 @@ footer {
 
 
   //.description section-------------------------------------------
+  
+  .description {
+    margin-top: 1.1vh;
+  }
+
+  .descrH2 h2 {
+    font-size: 2.7vw;
+  }
+
+  .logotip {
+    height: 2.6vh;
+  }
+  .logotip h2 {
+    font-size: 3.2vw;
+  }
 
   .descriptionDiv div p {
     font-size: 3vw;
@@ -723,15 +814,6 @@ footer {
 //------------------------------------------------------------
 @media screen and (max-width: 420px) {
 
-
-  .description {
-    margin-top: 3vh;
-  }
-
-  .logotip {
-    max-width: 60vw;
-    height: 5vh;
-  }
 
 
   .descriptionDiv {
