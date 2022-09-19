@@ -112,7 +112,7 @@ header {
   font-size: 2.5vw;
   font-weight: 600;
   color: gold;
-  -webkit-text-stroke: 0.1px black;
+  -webkit-text-stroke: 0.01px black;
   transition: all ease-in-out 0.5s;
 }
 
@@ -290,13 +290,13 @@ main {
   cursor: pointer;
 }
 
-.changecolor {
-  transition: all ease-in-out 0.5s;
-}
+// .changecolor {
+//   transition: all ease-in-out 0.5s;
+// }
 
-.priceDivs div:hover .changecolor {
-  color: rgb(248, 12, 146);
-}
+// .priceDivs div:hover .changecolor {
+//   color: rgb(248, 12, 146);
+// }
 
 .priceDivs p {
   font-size: 1vw;
@@ -306,6 +306,7 @@ main {
 .priceDivs span {
   font-size: 1.2vw;
   font-weight: 700;
+  color: rgb(248, 12, 146);
 }
 
 .ekskovatorPogrDiv img,
@@ -418,6 +419,32 @@ footer {
     font-size: 1.3vw;
   }
 
+  //icons section-------------------------------------------
+
+  .iconsSection img {
+    width: 6vw;
+  }
+
+  .iconsSection p {
+    font-size: 1.5vw;
+  }
+
+
+  //prices section--------------------------------------------
+
+  .priceDivs div img {
+    width: 14vw;
+  }
+
+  .priceDivs p {
+    font-size: 1.4vw;
+    text-align: center;
+  }
+
+  .priceDivs span {
+    font-size: 1.5vw;
+  }
+
 }
 
 
@@ -473,6 +500,38 @@ footer {
     font-size: 2vw;
     text-align: center;
   }
+
+  //icons section-------------------------------------------
+
+  .iconsSection {
+    padding-top: 0vh;
+    padding-bottom: 4vh;
+  }
+
+  .iconsSection img {
+    width: 7vw;
+  }
+
+  .iconsSection p {
+    font-size: 1.8vw;
+  }
+
+
+  //prices section--------------------------------------------
+
+  .priceDivs div img {
+    width: 16vw;
+  }
+
+  .priceDivs p {
+    font-size: 1.6vw;
+    text-align: center;
+  }
+
+  .priceDivs span {
+    font-size: 1.7vw;
+  }
+
 }
 
 
@@ -645,6 +704,20 @@ footer {
   .descriptionDiv div p {
     font-size: 2.3vw;
   }
+
+
+  //prices section--------------------------------------------
+
+
+  .priceDivs div p {
+    font-size: 2.7vw;
+    text-align: center;
+  }
+
+  .priceDivs div span {
+    font-size: 2.9vw;
+  }
+
 }
 
 
@@ -688,6 +761,42 @@ footer {
 
   .descriptionDiv div p {
     font-size: 2.5vw;
+  }
+
+
+  //prices section--------------------------------------------
+
+  .prices {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .priceDivs {
+    padding-left: 0vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .priceDivs div {
+    width: 70%;
+    
+  }
+
+  .priceDivs div img {
+    width: 30vw;
+  }
+
+  .priceDivs div p {
+    font-size: 3.4vw;
+    text-align: center;
+  }
+
+  .priceDivs div span {
+    font-size: 3.6vw;
   }
 }
 
@@ -735,6 +844,23 @@ footer {
     font-size: 2.7vw;
     text-align: center;
   }
+
+
+  //prices section--------------------------------------------
+
+
+  .priceDivs div img {
+    width: 34vw;
+  }
+
+  .priceDivs div p {
+    font-size: 3.8vw;
+    text-align: center;
+  }
+
+  .priceDivs div span {
+    font-size: 4vw;
+  }
 }
 
 
@@ -770,7 +896,7 @@ footer {
   }
 
   .menu1 a, .menu2 a {
-    font-size: 3.5vw;
+    font-size: 4.2vw;
   }
 
 
@@ -781,18 +907,35 @@ footer {
   }
 
   .descrH2 h2 {
-    font-size: 2.7vw;
+    font-size: 3.8vw;
   }
 
   .logotip {
     height: 2.6vh;
   }
   .logotip h2 {
-    font-size: 3.2vw;
+    font-size: 4.2vw;
   }
 
   .descriptionDiv div p {
-    font-size: 3vw;
+    font-size: 4.2vw;
+  }
+
+
+  //prices section--------------------------------------------
+
+
+  .priceDivs div img {
+    width: 38vw;
+  }
+
+  .priceDivs div p {
+    font-size: 4.2vw;
+    text-align: center;
+  }
+
+  .priceDivs div span {
+    font-size: 4.4vw;
   }
 }
 
@@ -831,25 +974,6 @@ footer {
   .iconsSection {
     display: none;
   }
-
-
-  .priceDivs div {
-    width: 45%;
-    height: 20vh;
-  }
-
-  .priceDivs div p {
-    font-size: 2.5vw;
-  }
-
-  .priceDivs div img {
-    width: 20vw;
-  }
-
-  .priceDivs span {
-    font-size: 3vw;
-  }
-
 
 
   .footDivWrapper {
