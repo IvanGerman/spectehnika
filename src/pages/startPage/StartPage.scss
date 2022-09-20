@@ -27,12 +27,19 @@
   border: 3px solid rgb(87, 72, 53);
 }
 
+.spectehnika div:hover .chitdalP,
+.uslugi div:hover .chitdalP {
+  color: rgb(255, 0, 123);
+}
+
 .techName {
   font-size: 1.2vw;
+  font-weight: 700;
 }
 
 .chitdalP {
   font-size: 1vw;
+  color: rgb(255, 111, 0);
 }
 
 

@@ -299,12 +299,13 @@ main {
 // }
 
 .priceDivs p {
-  font-size: 1vw;
+  font-size: 1.3vw;
   letter-spacing: 0.1vw;
+  text-align: center;
 }
 
 .priceDivs span {
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   font-weight: 700;
   color: rgb(248, 12, 146);
 }
@@ -336,7 +337,6 @@ footer {
 
 .footDivWrapper {
   max-width: 100vw;
-  height: 30vh;
   display: flex;
   column-gap: 3vw;
   margin-left: 16vw;
@@ -344,19 +344,28 @@ footer {
 
 .footDiv {
   width: 20vw;
-  height: 25vh;
   display: grid;
   justify-items: center;
   align-items: center;
 }
 
 .footP {
-  font-size: 1vw;
+  font-size: 1.4vw;
+  text-align: center;
+  color: rgb(42, 20, 20);
+}
+
+.footPcontact {
+  color: rgb(249, 94, 4);
 }
 
 .footFirstP {
-  font-size: 1.4vw;
+  font-size: 1.6vw;
   text-decoration: underline;
+}
+
+.footDiv p {
+  margin-bottom: 1.5vh;
 }
 
 
@@ -443,6 +452,17 @@ footer {
 
   .priceDivs span {
     font-size: 1.5vw;
+  }
+
+
+  //footer section--------------------------------------------
+
+  .footFirstP {
+    font-size: 1.7vw;
+  }
+
+  .footP {
+    font-size: 1.4vw;
   }
 
 }
@@ -532,6 +552,16 @@ footer {
     font-size: 1.7vw;
   }
 
+
+  //footer section--------------------------------------------
+
+  .footFirstP {
+    font-size: 2vw;
+  }
+
+  .footP {
+    font-size: 1.8vw;
+  }
 }
 
 
@@ -718,6 +748,16 @@ footer {
     font-size: 2.9vw;
   }
 
+
+  //footer section--------------------------------------------
+
+  .footFirstP {
+    font-size: 3.4vw;
+  }
+
+  .footP {
+    font-size: 3.2vw;
+  }
 }
 
 
@@ -798,6 +838,18 @@ footer {
   .priceDivs div span {
     font-size: 3.6vw;
   }
+
+
+  //footer section--------------------------------------------
+
+  .footFirstP {
+    font-size: 4vw;
+  }
+
+  .footP {
+    font-size: 3.8vw;
+  }
+
 }
 
 
@@ -861,6 +913,18 @@ footer {
   .priceDivs div span {
     font-size: 4vw;
   }
+
+
+  //footer section--------------------------------------------
+
+  .footFirstP {
+    font-size: 4.4vw;
+  }
+
+  .footP {
+    font-size: 4.2vw;
+  }
+
 }
 
 
@@ -907,7 +971,7 @@ footer {
   }
 
   .descrH2 h2 {
-    font-size: 3.8vw;
+    font-size: 4.2vw;
   }
 
   .logotip {
@@ -936,6 +1000,17 @@ footer {
 
   .priceDivs div span {
     font-size: 4.4vw;
+  }
+
+
+  //footer section--------------------------------------------
+
+  .footFirstP {
+    font-size: 4.7vw;
+  }
+
+  .footP {
+    font-size: 4.5vw;
   }
 }
 
@@ -984,14 +1059,6 @@ footer {
 
   .footDiv {
     width: 100%;
-  }
-
-  .footFirstP {
-    font-size: 3vw;
-  }
-
-  .footP {
-    font-size: 2.5vw;
   }
 
 }
