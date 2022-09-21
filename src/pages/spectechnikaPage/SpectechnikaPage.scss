@@ -79,31 +79,89 @@
   width: 20vw;
   margin: auto;
   font-size: 1.6vw;
+  text-align: center;
   margin-top: 2vw;
-  margin-bottom: 2vw;
 }
 
 .spectechnikaPagePreis {
   color: rgb(248, 12, 146);
 }
 
+.backBtnA {
+  //width: 4vw;
+}
+
 .backBtn {
   width: 4vw;
-  height: 5vh;
+  height: 12vh;
   margin: 0 auto;
+  padding-top: 2vh;
 }
 
 .backBtnImage {
   width: 4vw;
 }
 
+
 .spectechnikaDeskription {
   text-align: center;
   margin-left: 5vw;
   margin-right: 5vw;
-  line-height: 1.6vw;
+  line-height: 1.8vw;
   font-size: 1.2vw;
 }
+
+
+
+
+
+
+
+
+//-----------------------------------------------------------------------------------
+
+@media screen and (max-width: 1400px) {
+
+  .spectechnikaDeskription {
+    font-size: 1.5vw;
+    line-height: 2vw;
+  }
+
+  .spectechnikaPagePreisP {
+    font-size: 1.8vw;
+  }
+
+  .spectechnikaPagePreis {
+    font-size: 2vw;
+  }
+
+  .navlinksP {
+    font-size: 1.7vw;
+  }
+
+  .navP {
+    font-size: 1.5vw;
+    line-height: 2.3vw;
+  }
+
+  .telWrapper p {
+    font-size: 1.8vw;
+  }
+
+  .backBtn {
+    width: 6vw;
+  }
+  
+  .backBtnImage {
+    width: 6vw;
+  }
+}
+
+
+
+
+
+
 
 
 //-----------------------------------------------------------------------------------
@@ -138,15 +196,85 @@
 
   .spectechImage {
     margin: 0 auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
   }
 
   .spectechnikaDeskription {
-    font-size: 1.8vw;
-    line-height: 1.6;
+    font-size: 2.2vw;
+    line-height: 3vw;
   }
 
+  .spectechnikaPagePreisP {
+    font-size: 2.5vw;
+  }
+
+  .spectechnikaPagePreis {
+    font-size: 2.8vw;
+  }
+
+  .spectechImage img {
+
+  }
+
+  .navlinksP {
+    font-size: 3vw;
+  }
+
+  .navP {
+    font-size: 2.6vw;
+    line-height: 3vw;
+  }
+
+  .backBtnImage {
+    width: 9vw;
+  }
+}
+
+
+
+
+
+
+
+
+//-----------------------------------------------------------------------------------
+
+@media screen and (max-width: 550px) {
+
+
+.spectechnikaDeskription {
+  font-size: 2.7vw;
+  line-height: 3.7vw;
+}
+
+.spectechnikaPagePreisP {
+  font-size: 2.7vw;
+}
+
+.spectechnikaPagePreis {
+  font-size: 3.1vw;
+}
+
+.spectechImage img {
+  width: 42vw;
+}
+
+.navlinksP {
+  font-size: 3.3vw;
+}
+
+.navP {
+  font-size: 3.2vw;
+  line-height: 3.5vw;
+}
+
+.backBtnImage {
+  width: 11vw;
+}
 
 }
+
 
 
 //-----------------------------------------------------------------------------------

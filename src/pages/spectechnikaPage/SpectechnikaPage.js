@@ -38,7 +38,7 @@ const SpectechnikaPage = {
             <p class="emailP">spectehnika@mail.ru</p>
            </div>
         </div>  
-        <a href="#/"><div class="backBtn">
+        <a href="#/" class="backBtnA"><div class="backBtn">
           <img src="./assets/img/backBtn.png" alt="" class="backBtnImage" />
         </div></a>
       </div>

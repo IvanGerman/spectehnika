@@ -9,7 +9,9 @@
 
 .spectehnika div {
   width: 20vw;
-  height: 40vh;
+  //height: 40vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   border: 3px solid rgb(199, 181, 156);
   border-radius: 20px;
   display: grid;
@@ -20,6 +22,13 @@
 
 .spectehnika div img {
   width: 15vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.uslugi img {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 .spectehnika div:hover {
@@ -80,7 +89,9 @@
 
 .uslugi div {
   width: 40vw;
-  height: 40vh;
+  //height: 40vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   background-color: antiquewhite;
   border: 3px solid rgb(199, 181, 156);
   border-radius: 20px;
@@ -114,7 +125,7 @@
 
   .spectehnika div {
     width: 20vw;
-    height: 33vh;
+    //height: 33vh;
   }
 
   .techName {
@@ -143,11 +154,11 @@
 
   .spectehnika div {
     width: 20vw;
-    height: 29vh;
+    //height: 29vh;
   }
 
   .uslugi div {
-    height: 34vh;
+    //height: 34vh;
   }
 
   .techName {
@@ -181,7 +192,7 @@
 
   .spectehnika div {
     width: 45%;
-    height: 25vh;
+    //height: 25vh;
   }
 
   .spectehnika div p {
@@ -195,7 +206,7 @@
 
   .uslugi div {
     width: 80%;
-    height: 32vh;
+    //height: 32vh;
   }
 
   .uslugi p {
@@ -225,7 +236,7 @@
 
   .spectehnika div {
     width: 45%;
-    height: 25vh;
+    //height: 25vh;
   }
 
   .spectehnika div p {
@@ -266,7 +277,7 @@
 
   .spectehnika div {
     width: 70%;
-    height: 25vh;
+    //height: 25vh;
   }
 
   .spectehnika div p {
@@ -319,7 +330,7 @@
 
   .spectehnika div {
     width: 70%;
-    height: 26vh;
+    //height: 26vh;
   }
 
   .spectehnika div p {
@@ -332,7 +343,7 @@
 
   .uslugi div {
     width: 90%;
-    height: 25vh;
+    //height: 25vh;
   }
 
   .uslugi p {
@@ -361,7 +372,7 @@
 
   .spectehnika div {
     width: 70%;
-    height: 22vh;
+    //height: 22vh;
   }
 
   .spectehnika div p {
@@ -374,7 +385,7 @@
 
   .uslugi div {
     width: 90%;
-    height: 25vh;
+    //height: 25vh;
   }
 
   .uslugi p {
