@@ -94,7 +94,12 @@ const StartPage = {
       prices.setValue = Number(elem.innerHTML);
     })
 
-
+    const toTheTopButton = document.querySelector('#toTheTopButton');
+    toTheTopButton.addEventListener( 'click', getToTheTop );
+    function getToTheTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    };
     // const samosvalPreis = document.querySelector('.samosvalPreis');
     // prices.setSamosvalPreis = Number(samosvalPreis.innerHTML);
     // const ekskovatorpogrPreis = document.querySelector('.ekskovatorpogrPreis');
@@ -130,6 +135,7 @@ const StartPage = {
         keyName = event.target.parentElement.getAttribute("data-keyname");
         currentKeyName.setCurrentKeyName = keyName;
       }
+      addEvlist();
       changeUrl('#spectehnika');
     });
 
@@ -149,8 +155,25 @@ const StartPage = {
         keyName = event.target.parentElement.getAttribute("data-keyname");
         currentKeyName.setCurrentKeyName = keyName;
       }
+      addEvlist();
       changeUrl('#spectehnika');
     });
+
+
+    //addEventListener to "arenda spectehniki" and "nashi uslugi" links
+    function addEvlist () { console.log('gggggggggggggg');
+      const link1 = document.querySelector('.specteh-a');
+      const link2 = document.querySelector('.uslug-a');
+      link1.addEventListener( 'click' , (event) => {
+        event.preventDefault();
+        changeUrl('#/');
+        event.defaultPrevented;
+      });
+      link2.addEventListener( 'click' , (event) => {
+        event.preventDefault();
+        changeUrl('#/') });
+        event.defaultPrevented;
+    }
 
     // const samosvalUpperDiv = document.querySelector('.samosvalUpperDiv');
     // const ekskovatorpogrUpperDiv = document.querySelector('.ekskovatorpogrUpperDiv');

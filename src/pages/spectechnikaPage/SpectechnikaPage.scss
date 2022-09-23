@@ -1,5 +1,6 @@
 .spectechnikaPage {
   max-width: 100vw;
+  padding-top: 2vh;
 }
 
 .spectechnikaPage h2 {
@@ -19,6 +20,7 @@
   width: 16vw;
   height: 22vh;
   margin-left: 5vw;
+  margin-right: 2vw;
   display: grid;
   justify-items: center;
   //align-items: center;
@@ -35,7 +37,7 @@
 }
 
 .spectechImage {
-  width: 32vw;
+  width: 100%;
   margin-left: 11vw;
   margin-bottom: 1vw;
   display: grid;
@@ -49,7 +51,7 @@
 
 .navlinks {
   width: 60;
-  margin-left: 5vw;
+  margin-left: 3vw;
 }
 
 .navlinksP {
@@ -170,6 +172,7 @@
 
   .spectechnikaPage h2 {
     font-size: 3vw;
+    margin-bottom: 4vw;
   }
 
   .telWrapper {
@@ -269,6 +272,10 @@
   line-height: 3.5vw;
 }
 
+.backBtn {
+  width: 11vw;
+}
+
 .backBtnImage {
   width: 11vw;
 }
@@ -277,44 +284,160 @@
 
 
 
+
+
+
+
+
 //-----------------------------------------------------------------------------------
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 468px) {
+
 
   .spectechnikaPage h2 {
-    font-size: 3vw;
-  }
-
-  .telWrapper {
-    display: none;
-  }
-
-  .navlinksWrapper {
-    flex-direction: column;
-  }
-
-  .navlinks {
-    margin: 0 auto;
-  }
-
-  .navlinksP {
-    font-size: 2.6vw;
-    margin-bottom: 1.3vh;
-  }
-
-  .navP {
-    font-size: 2vw;
-    margin-bottom: 1.2vh;
-  }
-
-  .spectechImage {
-    margin: 0 auto;
+    font-size: 4vw;
   }
 
   .spectechnikaDeskription {
-    font-size: 1.8vw;
-    line-height: 1.6;
+    font-size: 3.2vw;
+    line-height: 4.2vw;
+  }
+  
+  .spectechnikaPagePreisP {
+    font-size: 3.2vw;
+  }
+  
+  .spectechnikaPagePreis {
+    font-size: 3.6vw;
   }
 
+  .spectechImage img {
+    width: 52vw;
+  }
+  
+  .navlinksP {
+    font-size: 3.8vw;
+  }
+  
+  .navP {
+    font-size: 3.7vw;
+    line-height: 4.2vw;
+  }
+  
+  .backBtn {
+    width: 15vw;
+  }
 
+  .backBtnImage {
+    width: 15vw;
+  }
+  
 }
+
+
+
+
+
+
+
+
+//------------------------------------------------------------------------------
+
+@media screen and (max-width: 420px) {
+
+
+  .spectechnikaPage h2 {
+    font-size: 4.4vw;
+  }
+
+  .spectechnikaDeskription {
+    font-size: 3.7vw;
+    line-height: 5.2vw;
+  }
+  
+  .spectechnikaPagePreisP {
+    font-size: 3.7vw;
+    line-height: 5.2vw;
+  }
+  
+  .spectechnikaPagePreis {
+    font-size: 4.1vw;
+  }
+
+  .spectechImage img {
+    width: 52vw;
+  }
+  
+  .navlinksP {
+    font-size: 4vw;
+  }
+  
+  .navP {
+    font-size: 4vw;
+    line-height: 4.5vw;
+  }
+  
+  .backBtn {
+    width: 18vw;
+  }
+
+  .backBtnImage {
+    width: 18vw;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+//------------------------------------------------------------------------------
+
+@media screen and (max-width: 360px) {
+
+
+  .spectechnikaPage h2 {
+    font-size: 4.6vw;
+  }
+
+  .spectechnikaDeskription {
+    font-size: 4vw;
+    line-height: 5.5vw;
+  }
+  
+  .spectechnikaPagePreisP {
+    font-size: 4vw;
+    line-height: 5.5vw;
+  }
+  
+  .spectechnikaPagePreis {
+    font-size: 4.4vw;
+  }
+
+  .spectechImage img {
+    width: 55vw;
+  }
+  
+  .navlinksP {
+    font-size: 4.3vw;
+  }
+  
+  .navP {
+    font-size: 4.3vw;
+    line-height: 4.8vw;
+  }
+  
+  .backBtn {
+    width: 18vw;
+  }
+
+  .backBtnImage {
+    width: 18vw;
+  }
+  
+}
+

@@ -137,17 +137,18 @@ header {
 }
 
 .descriptionDiv {
-  max-width: 90vw;
+  width: 90vw;
   margin: 0 auto;
-  margin-left: 10vw;
+  //margin-left: 10vw;
   display: flex;
   flex-direction: row;
-  column-gap: 9vw;
+  justify-content: space-around;
+  //column-gap: 15vw;
   padding-top: 1vh;
 }
 
 .descrDivP {
-  font-size: 1vw;
+  font-size: 1.4vw;
 }
 
 .phone {
@@ -168,10 +169,16 @@ header {
 
 .descriptionRightDiv {
   margin-top: 1.7vh;
+  display: grid;
+  justify-content: center;
+}
+
+.descriptionRightDiv p {
+  text-align: center;
 }
 
 .descrP {
-  font-size: 1vw;
+  font-size: 1.4vw;
   margin-bottom: 1.1vh;
 }
 
@@ -371,7 +378,13 @@ footer {
 }
 
 
-
+#toTheTopButton {
+  position: fixed;
+  width: 3vw;
+  bottom: 2vh;
+  right: 1vw;
+  cursor: pointer;
+}
 
 
 
@@ -467,6 +480,9 @@ footer {
     font-size: 1.4vw;
   }
 
+  #toTheTopButton {
+    width: 4vw;
+  }
 }
 
 
@@ -563,6 +579,11 @@ footer {
 
   .footP {
     font-size: 1.8vw;
+  }
+
+
+  #toTheTopButton {
+    width: 5vw;
   }
 }
 
@@ -679,6 +700,10 @@ footer {
     font-size: 2.5vw;
   }
 
+
+  #toTheTopButton {
+    width: 6vw;
+  }
 }
 
 
@@ -759,6 +784,11 @@ footer {
 
   .footP {
     font-size: 3.2vw;
+  }
+
+
+  #toTheTopButton {
+    width: 7.7vw;
   }
 }
 
@@ -852,6 +882,10 @@ footer {
     font-size: 3.8vw;
   }
 
+
+  #toTheTopButton {
+    width: 9vw;
+  }
 }
 
 
@@ -927,6 +961,10 @@ footer {
     font-size: 4.2vw;
   }
 
+
+  #toTheTopButton {
+    width: 13.5vw;
+  }
 }
 
 
@@ -1013,6 +1051,11 @@ footer {
 
   .footP {
     font-size: 4.5vw;
+  }
+
+
+  #toTheTopButton {
+    width: 15vw;
   }
 }
 
