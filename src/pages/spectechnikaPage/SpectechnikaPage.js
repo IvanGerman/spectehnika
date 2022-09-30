@@ -6,7 +6,7 @@ import './SpectechnikaPage.scss';
 
 const SpectechnikaPage = {
   render: async () => {
-    document.documentElement.scrollTop = document.body.scrollTop = window.innerWidth * 0.5;
+    document.documentElement.scrollTop = document.body.scrollTop = 18;
     const view = `
       <div class="spectechnikaPage">
         <h2>${sectionName[currentKeyName.currentKeyName]}</h2>

@@ -83,6 +83,10 @@ const StartPage = {
   
   after_render: () => {
     
+    const header = document.querySelector('header');
+    const descriptionSection = document.querySelector('.description');
+    header.style.display = 'block';
+    descriptionSection.style.display = 'block';
     //here we get all prices from innerHTML of divs from the prices section and put them into prices object
 
     //later with setValue method
@@ -100,23 +104,6 @@ const StartPage = {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     };
-    // const samosvalPreis = document.querySelector('.samosvalPreis');
-    // prices.setSamosvalPreis = Number(samosvalPreis.innerHTML);
-    // const ekskovatorpogrPreis = document.querySelector('.ekskovatorpogrPreis');
-    // prices.setEkskovatorpogrPreis = Number(ekskovatorpogrPreis.innerHTML);
-    // const bulldozerPreis = document.querySelector('.bulldozerPreis');
-    // prices.setBulldozerPreis = Number(bulldozerPreis.innerHTML);
-
-    // const ekskavatorPreis = document.querySelector('.ekskavatorPreis');
-    // prices.setEkskavatorPreis = Number(ekskavatorPreis.innerHTML);
-    // const frontalPreis = document.querySelector('.frontalPreis');
-    // prices.setFrontalPreis = Number(frontalPreis.innerHTML);
-    // const avtokranPreis = document.querySelector('.avtokranPreis');
-    // prices.setAvtokranPreis = Number(avtokranPreis.innerHTML);
-    // const manipulatorPreis = document.querySelector('.manipulatorPreis');
-    // prices.setManipulatorPreis = Number(manipulatorPreis.innerHTML);
-    // const jamoburPreis = document.querySelector('.jamoburPreis');
-    // prices.setJamoburPreis = Number(jamoburPreis.innerHTML);
 
     console.log('prices obj--', prices);  
 
@@ -124,18 +111,7 @@ const StartPage = {
 
     const spectehnikaDiv = document.querySelector('.spectehnika');
     spectehnikaDiv.addEventListener('click', (event) => {
-      let keyName;
-      if (event.target.getAttribute("data-keyname")) {
-        console.log(event.target.getAttribute("data-keyname"),event.target);
-        keyName = event.target.getAttribute("data-keyname");
-        currentKeyName.setCurrentKeyName = keyName;
-      } else {
-        if (event.target.parentElement.getAttribute("data-keyname") === null) {return};
-        console.log('parentElement',event.target.parentElement.getAttribute("data-keyname"));
-        keyName = event.target.parentElement.getAttribute("data-keyname");
-        currentKeyName.setCurrentKeyName = keyName;
-      }
-      addEvlist();
+      addEvlist(event);
       changeUrl('#spectehnika');
     });
 
@@ -144,51 +120,28 @@ const StartPage = {
 
     const uslugiDiv = document.querySelector('.uslugi');
     uslugiDiv.addEventListener('click', (event) => {
-      let keyName;
-      if (event.target.getAttribute("data-keyname")) {
-        console.log(event.target.getAttribute("data-keyname"),event.target);
-        keyName = event.target.getAttribute("data-keyname");
-        currentKeyName.setCurrentKeyName = keyName;
-      } else {
-        if (event.target.parentElement.getAttribute("data-keyname") === null) {return};
-        console.log('parentElement',event.target.parentElement.getAttribute("data-keyname"));
-        keyName = event.target.parentElement.getAttribute("data-keyname");
-        currentKeyName.setCurrentKeyName = keyName;
-      }
-      addEvlist();
+      addEvlist(event);
       changeUrl('#spectehnika');
     });
 
 
     //addEventListener to "arenda spectehniki" and "nashi uslugi" links
-    function addEvlist () { console.log('gggggggggggggg');
-      const link1 = document.querySelector('.specteh-a');
-      const link2 = document.querySelector('.uslug-a');
-      link1.addEventListener( 'click' , (event) => {
-        event.preventDefault();
-        changeUrl('#/');
-        event.defaultPrevented;
-      });
-      link2.addEventListener( 'click' , (event) => {
-        event.preventDefault();
-        changeUrl('#/') });
-        event.defaultPrevented;
+    function addEvlist (event) { console.log('gggggggggggggg');
+    header.style.display = 'none';
+    descriptionSection.style.display = 'none';
+    let keyName;
+    if (event.target.getAttribute("data-keyname")) {
+      console.log(event.target.getAttribute("data-keyname"),event.target);
+      keyName = event.target.getAttribute("data-keyname");
+      currentKeyName.setCurrentKeyName = keyName;
+    } else {
+      if (event.target.parentElement.getAttribute("data-keyname") === null) {return};
+      console.log('parentElement',event.target.parentElement.getAttribute("data-keyname"));
+      keyName = event.target.parentElement.getAttribute("data-keyname");
+      currentKeyName.setCurrentKeyName = keyName;
     }
-
-    // const samosvalUpperDiv = document.querySelector('.samosvalUpperDiv');
-    // const ekskovatorpogrUpperDiv = document.querySelector('.ekskovatorpogrUpperDiv');
-
-    // samosvalUpperDiv.addEventListener('click', (event) => {
-    //   let keyName = event.currentTarget.getAttribute("data-keyname");
-    //   currentKeyName.setCurrentKeyName = keyName;
-    //   changeUrl('#spectehnika');
-    // });
-
-    // ekskovatorpogrUpperDiv.addEventListener('click', (event) => {
-    //   let keyName = event.currentTarget.getAttribute("data-keyname");
-    //   currentKeyName.setCurrentKeyName = keyName;
-    //   changeUrl('#spectehnika');
-    // });
+      
+    }
 
   },
 };
