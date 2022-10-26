@@ -8,7 +8,7 @@ const StartPage = {
     <div class="anchorDiv" id="specteh">
       <h2>Аренда спецтехники</h2>
     </div>
-    <div class="spectehnika">
+    <div class="spectehnika" data-keyname="zero">
     <div class="ekskovatorpogrUpperDiv" data-keyname="ekskovatorpogr">
       <p class="techName">Экскаватор- погрузчик</p>     
       <img src="./assets/img/ekskovatorpogr.png" alt="" />     
@@ -53,7 +53,7 @@ const StartPage = {
   <div class="anchorDiv" id="uslug">
     <h2>Наши услуги</h2>
   </div>
-  <div class="uslugi">
+  <div class="uslugi" data-keyname="zero">
     <div data-keyname="planirovka">
       <p class="techName">Планировка участка</p>
       <img src="./assets/img/planirovka.jpg" alt="" />
@@ -92,7 +92,7 @@ const StartPage = {
     //later with setValue method
 
     const allPriceSpans = document.querySelectorAll('.changecolor');
-    console.log('allPriceSpans--',allPriceSpans);
+    
     allPriceSpans.forEach((elem) => {
       prices.setKey = elem.getAttribute("data-key");
       prices.setValue = Number(elem.innerHTML);
@@ -105,13 +105,25 @@ const StartPage = {
       document.documentElement.scrollTop = 0;
     };
 
-    console.log('prices obj--', prices);  
 
     //here we add eventlisteners (with delegation) to all our technik divs
 
     const spectehnikaDiv = document.querySelector('.spectehnika');
     spectehnikaDiv.addEventListener('click', (event) => {
-      addEvlist(event);
+      if (event.target.getAttribute("data-keyname") === 'zero') {return};
+      header.style.display = 'none';
+      descriptionSection.style.display = 'none';
+      let keyName;
+      if (event.target.getAttribute("data-keyname")) {
+        
+        keyName = event.target.getAttribute("data-keyname");
+        currentKeyName.setCurrentKeyName = keyName;
+      } else {
+        if (event.target.parentElement.getAttribute("data-keyname") === null) {return};
+        
+        keyName = event.target.parentElement.getAttribute("data-keyname");
+        currentKeyName.setCurrentKeyName = keyName;
+      };
       changeUrl('#spectehnika');
     });
 
@@ -120,28 +132,22 @@ const StartPage = {
 
     const uslugiDiv = document.querySelector('.uslugi');
     uslugiDiv.addEventListener('click', (event) => {
-      addEvlist(event);
+      if (event.target.getAttribute("data-keyname") === 'zero') {return};
+      header.style.display = 'none';
+      descriptionSection.style.display = 'none';
+      let keyName;
+      if (event.target.getAttribute("data-keyname")) {
+        
+        keyName = event.target.getAttribute("data-keyname");
+        currentKeyName.setCurrentKeyName = keyName;
+      } else {
+        if (event.target.parentElement.getAttribute("data-keyname") === null) {return};
+        
+        keyName = event.target.parentElement.getAttribute("data-keyname");
+        currentKeyName.setCurrentKeyName = keyName;
+      }
       changeUrl('#spectehnika');
     });
-
-
-    //addEventListener to "arenda spectehniki" and "nashi uslugi" links
-    function addEvlist (event) { console.log('gggggggggggggg');
-    header.style.display = 'none';
-    descriptionSection.style.display = 'none';
-    let keyName;
-    if (event.target.getAttribute("data-keyname")) {
-      console.log(event.target.getAttribute("data-keyname"),event.target);
-      keyName = event.target.getAttribute("data-keyname");
-      currentKeyName.setCurrentKeyName = keyName;
-    } else {
-      if (event.target.parentElement.getAttribute("data-keyname") === null) {return};
-      console.log('parentElement',event.target.parentElement.getAttribute("data-keyname"));
-      keyName = event.target.parentElement.getAttribute("data-keyname");
-      currentKeyName.setCurrentKeyName = keyName;
-    }
-      
-    }
 
   },
 };

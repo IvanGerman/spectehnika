@@ -33,9 +33,9 @@ const SpectechnikaPage = {
             <p href="#/" class="navP" data-keyname="kopka">Копка котлованов и траншей</p>
           </div>
           <div class="telWrapper">
-            <p>+7 (3822) 11-11-11</p>
-            <p>+7 999-999-99-99</p>
-            <p class="emailP">spectehnika@mail.ru</p>
+            <p>+7 (3822) 577-522</p>
+            <p>8-964-091-62-11 (бухгалтер)</p>
+            <p class="emailP">tk.nord@mail.ru</p>
            </div>
         </div>  
         <a href="#/" class="backBtnA"><div class="backBtn">

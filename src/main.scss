@@ -81,14 +81,15 @@ header {
   max-width: 60vw;
   height: 5vh;
   margin: 0 auto;
-  margin-bottom: 2vh;
+  margin-bottom: 6vh;
   display: flex;
   justify-content: space-around;
 }
 
 .logotip h2 {
-  font-size: 1.8vw;
+  font-size: 3vw;
   color: gold;
+  text-decoration: underline;
   -webkit-text-stroke: 0.1px black;
   transition: all ease-in-out 0.5s;
 }
@@ -157,7 +158,7 @@ header {
 }
 
 .email {
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   color: rgb(249, 94, 4);
 }
 
@@ -387,6 +388,14 @@ footer {
 }
 
 
+.footDivWrapper2 {
+  justify-content: center;
+  margin-left: 0px;
+}
+
+.footFirstP2 {
+  text-align: center;
+}
 
 
 
@@ -432,11 +441,11 @@ footer {
   }
 
   .logotip {
-    margin-bottom: 1.5vh;
+    margin-bottom: 3.5vh;
   }
 
   .logotip h2 {
-    font-size: 2.2vw;
+    font-size: 3vw;
   }
 
   .descrDivP, .descrP {
@@ -523,11 +532,11 @@ footer {
   }
 
   .logotip {
-    margin-bottom: 1vh;
+    margin-bottom: 3vh;
   }
 
   .logotip h2 {
-    font-size: 2.3vw;
+    font-size: 3vw;
   }
 
   .descrDivP, .descrP {
@@ -637,7 +646,7 @@ footer {
   }
 
   .logotip h2 {
-    font-size: 2.5vw;
+    font-size: 3.2vw;
   }
 
 
@@ -755,7 +764,7 @@ footer {
   }
 
   .logotip h2 {
-    font-size: 2.8vw;
+    font-size: 3.2vw;
   }
 
   .descriptionDiv div p {
@@ -824,7 +833,7 @@ footer {
   //.description section-------------------------------------------
 
   .logotip h2 {
-    font-size: 2.9vw;
+    font-size: 3.4vw;
   }
 
   .descrH2 h2 {
@@ -925,7 +934,7 @@ footer {
   }
 
   .logotip h2 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .descriptionDiv div p {
