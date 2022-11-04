@@ -42,12 +42,13 @@
 }
 
 .techName {
-  font-size: 1.2vw;
+  font-size: 1.7vw;
   font-weight: 700;
+  text-align: center;
 }
 
 .chitdalP {
-  font-size: 1vw;
+  font-size: 1.4vw;
   color: rgb(255, 111, 0);
 }
 
@@ -119,8 +120,12 @@
 //------------------------------------------------------------
 @media screen and (max-width: 1400px) {
 
+  .anchorDiv {
+    width: 70vw;
+  }
+
   .anchorDiv h2 {
-    font-size: 1.8vw;
+    font-size: 2.5vw;
   }
 
   .spectehnika div {
@@ -129,11 +134,16 @@
   }
 
   .techName {
-    font-size: 1.5vw;
+    font-size: 2.1vw;
+    text-align: center;
   }
 
   .chitdalP {
-    font-size: 1.5vw;
+    font-size: 1.8vw;
+  }
+
+  .iconsSection {
+    padding-left: 18vw;
   }
 }
 
@@ -148,8 +158,12 @@
 //------------------------------------------------------------
 @media screen and (max-width: 1024px) {
 
+  .anchorDiv {
+    width: 60vw;
+  }
+
   .anchorDiv h2 {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .spectehnika div {
@@ -162,12 +176,12 @@
   }
 
   .techName {
-    font-size: 1.7vw;
+    font-size: 2vw;
     text-align: center;
   }
 
   .chitdalP {
-    font-size: 1.7vw;
+    font-size: 2vw;
   }
 }
 
@@ -187,7 +201,7 @@
   }
 
   .anchorDiv h2 {
-    font-size: 2.8vw;
+    font-size: 3.3vw;
   }
 
   .spectehnika div {
@@ -196,7 +210,7 @@
   }
 
   .spectehnika div p {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 
   .spectehnika div img {
@@ -210,7 +224,7 @@
   }
 
   .uslugi p {
-    font-size: 3vw;
+    font-size: 3.6vw;
   }
 
   .uslugi img {
@@ -230,8 +244,13 @@
 //------------------------------------------------------------
 @media screen and (max-width: 550px) {
 
+  .anchorDiv {
+    max-width: 80vw;
+    width: 80vw;
+  }
+
   .anchorDiv h2 {
-    font-size: 3.1vw;
+    font-size: 4.2vw;
   }
 
   .spectehnika div {
@@ -240,7 +259,7 @@
   }
 
   .spectehnika div p {
-    font-size: 3vw;
+    font-size: 3.6vw;
   } 
 
   .techName {
@@ -272,7 +291,7 @@
   }
 
   .anchorDiv h2 {
-    font-size: 3.4vw;
+    font-size: 4.8vw;
   }
 
   .spectehnika div {
@@ -281,7 +300,7 @@
   }
 
   .spectehnika div p {
-    font-size: 3.4vw;
+    font-size: 4vw;
   } 
 
   .spectehnika div img {
@@ -298,7 +317,7 @@
   }
 
   .uslugi p {
-    font-size: 3.8vw;
+    font-size: 4vw;
   }
 
   .uslugi img {
@@ -324,7 +343,7 @@
   }
 
   .anchorDiv h2 {
-    font-size: 4vw;
+    font-size: 5.2vw;
     text-align: center;
   }
 
@@ -334,7 +353,7 @@
   }
 
   .spectehnika div p {
-    font-size: 3.8vw;
+    font-size: 4.4vw;
   }
 
   .spectehnika div img {
@@ -347,7 +366,7 @@
   }
 
   .uslugi p {
-    font-size: 3.8vw;
+    font-size: 4.4vw;
   }
 
   .uslugi img {
@@ -366,7 +385,7 @@
 @media screen and (max-width: 360px) {
 
   .anchorDiv h2 {
-    font-size: 5vw;
+    font-size: 6vw;
     text-align: center;
   }
 
@@ -376,7 +395,7 @@
   }
 
   .spectehnika div p {
-    font-size: 4.2vw;
+    font-size: 5.2vw;
   }
 
   .spectehnika div img {
@@ -389,7 +408,7 @@
   }
 
   .uslugi p {
-    font-size: 4.2vw;
+    font-size: 5.2vw;
   }
 
   .uslugi img {
