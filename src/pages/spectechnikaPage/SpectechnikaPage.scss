@@ -70,7 +70,8 @@
   color: black;
   font-size: 1vw;
   line-height: 1.6vw;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.2s;
+  margin-bottom: 1vh;
 }
 
 .navP:hover {
@@ -167,12 +168,69 @@
 
 
 
+
+
+
+
+//-----------------------------------------------------------------------------------
+
+@media screen and (max-width: 1024px) {
+  
+  .spectechnikaPage h2 {
+    font-size: 3vw;
+    margin-bottom: 1.5vh;
+  }
+
+  .spectechnikaDeskription {
+    font-size: 2vw;
+    line-height: 3vh;
+  }
+
+  .spectechnikaPagePreisP {
+    font-size: 2.5vw;
+  }
+
+  .spectechnikaPagePreis {
+    font-size: 3vw;
+  }
+
+  .navlinksP {
+    font-size: 2.5vw;
+    margin-bottom: 1.9vh;
+  }
+
+  .navP {
+    font-size: 2vw;
+    margin-bottom: 1.3vh;
+  }
+
+  .telWrapper p {
+    font-size: 2.5vw;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //-----------------------------------------------------------------------------------
 
 @media screen and (max-width: 768px) {
 
   .spectechnikaPage h2 {
-    font-size: 3vw;
+    font-size: 4vw;
     margin-bottom: 4vw;
   }
 
@@ -205,29 +263,27 @@
   }
 
   .spectechnikaDeskription {
-    font-size: 2.2vw;
-    line-height: 3vw;
+    font-size: 3vw;
+    line-height: 3.5vh;
   }
 
   .spectechnikaPagePreisP {
-    font-size: 2.5vw;
-  }
-
-  .spectechnikaPagePreis {
-    font-size: 2.8vw;
-  }
-
-  .spectechImage img {
-
-  }
-
-  .navlinksP {
     font-size: 3vw;
   }
 
+  .spectechnikaPagePreis {
+    font-size: 3.8vw;
+  }
+
+  .navlinksP {
+    font-size: 4vw;
+    margin-bottom: 3vh;
+  }
+
   .navP {
-    font-size: 2.6vw;
+    font-size: 3vw;
     line-height: 3vw;
+    margin-bottom: 2vh;
   }
 
   .backBtnImage {
@@ -246,31 +302,33 @@
 
 @media screen and (max-width: 550px) {
 
+  .spectechnikaPage h2 {
+    font-size: 5.3vw;
+    margin-bottom: 4vw;
+  }
 
 .spectechnikaDeskription {
-  font-size: 2.7vw;
-  line-height: 3.7vw;
+  font-size: 4vw;
+  line-height: 3.6vh;
 }
 
 .spectechnikaPagePreisP {
-  font-size: 2.7vw;
+  font-size: 4vw;
+  margin-top: 3vh;
 }
 
 .spectechnikaPagePreis {
-  font-size: 3.1vw;
-}
-
-.spectechImage img {
-  width: 42vw;
+  font-size: 4.6vw;
 }
 
 .navlinksP {
-  font-size: 3.3vw;
+  font-size: 5vw;
 }
 
 .navP {
-  font-size: 3.2vw;
+  font-size: 4.2vw;
   line-height: 3.5vw;
+  margin-bottom: 3.5vh;
 }
 
 .backBtn {
@@ -296,32 +354,28 @@
 
 
   .spectechnikaPage h2 {
-    font-size: 4vw;
+    font-size: 5.8vw;
   }
 
   .spectechnikaDeskription {
-    font-size: 3.2vw;
-    line-height: 4.2vw;
+    font-size: 4.2vw;
+    line-height: 3.6vh;
   }
   
   .spectechnikaPagePreisP {
-    font-size: 3.2vw;
+    font-size: 4.2vw;
   }
   
   .spectechnikaPagePreis {
-    font-size: 3.6vw;
-  }
-
-  .spectechImage img {
-    width: 52vw;
+    font-size: 4.8vw;
   }
   
   .navlinksP {
-    font-size: 3.8vw;
+    font-size: 4.8vw;
   }
   
   .navP {
-    font-size: 3.7vw;
+    font-size: 4vw;
     line-height: 4.2vw;
   }
   
@@ -348,34 +402,30 @@
 
 
   .spectechnikaPage h2 {
-    font-size: 4.4vw;
+    font-size: 6vw;
   }
 
   .spectechnikaDeskription {
-    font-size: 3.7vw;
-    line-height: 5.2vw;
+    font-size: 4.5vw;
+    line-height: 3.4vh;
   }
   
   .spectechnikaPagePreisP {
-    font-size: 3.7vw;
+    font-size: 4.5vw;
     line-height: 5.2vw;
   }
   
   .spectechnikaPagePreis {
-    font-size: 4.1vw;
-  }
-
-  .spectechImage img {
-    width: 52vw;
+    font-size: 5.3vw;
   }
   
   .navlinksP {
-    font-size: 4vw;
+    font-size: 5.3vw;
   }
   
   .navP {
-    font-size: 4vw;
-    line-height: 4.5vw;
+    font-size: 4.5vw;
+    line-height: 4vw;
   }
   
   .backBtn {
@@ -402,33 +452,29 @@
 
 
   .spectechnikaPage h2 {
-    font-size: 4.6vw;
+    font-size: 7vw;
   }
 
   .spectechnikaDeskription {
-    font-size: 4vw;
-    line-height: 5.5vw;
+    font-size: 5vw;
   }
   
   .spectechnikaPagePreisP {
-    font-size: 4vw;
+    font-size: 5vw;
     line-height: 5.5vw;
   }
   
   .spectechnikaPagePreis {
-    font-size: 4.4vw;
+    font-size: 6vw;
   }
 
-  .spectechImage img {
-    width: 55vw;
-  }
   
   .navlinksP {
-    font-size: 4.3vw;
+    font-size: 6.3vw;
   }
   
   .navP {
-    font-size: 4.3vw;
+    font-size: 5.3vw;
     line-height: 4.8vw;
   }
   
