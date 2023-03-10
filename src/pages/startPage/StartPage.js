@@ -11,42 +11,42 @@ const StartPage = {
     <div class="spectehnika" data-keyname="zero">
     <div class="ekskovatorpogrUpperDiv" data-keyname="ekskovatorpogr">
       <p class="techName">Экскаватор- погрузчик</p>     
-      <img src="./assets/img/ekskovatorpogr.png" alt="" />     
+      <img loading="lazy" src="./assets/img/ekskovatorpogr.png" alt="" />     
       <p class="chitdalP">Читать далее</p>
     </div>
     <div class="samosvalUpperDiv" data-keyname="samosval">
       <p class="techName">Самосвал</p>     
-      <img src="./assets/img/samosval.jpg" alt="" />      
+      <img loading="lazy" src="./assets/img/samosval.jpg" alt="" />      
       <p class="chitdalP">Читать далее</p>
     </div>
     <div class="bulldozerUpperDiv" data-keyname="bulldozer">   
       <p class="techName">Бульдозер</p>     
-      <img src="./assets/img/bulldozer.png" alt="" />     
+      <img loading="lazy" src="./assets/img/bulldozer.png" alt="" />     
       <p class="chitdalP">Читать далее</p>
     </div>
     <div class="frontalUpperDiv" data-keyname="frontal">  
       <p class="techName">Фронтальный погрузчик</p>    
-      <img src="./assets/img/frontal.jpg" alt="" />    
+      <img loading="lazy" src="./assets/img/frontal.jpg" alt="" />    
       <p class="chitdalP">Читать далее</p>
     </div>
     <div class="ekskavatorUpperDiv" data-keyname="ekskavator"> 
       <p class="techName">Экскаватор</p>      
-      <img src="./assets/img/ekskavator.jpg" alt="" />     
+      <img loading="lazy" src="./assets/img/ekskavator.jpg" alt="" />     
       <p class="chitdalP">Читать далее</p>
     </div>
     <div class="avtokranUpperDiv" data-keyname="avtokran">    
       <p class="techName">Автокран</p>     
-      <img src="./assets/img/avtokran.jpg" alt="" />     
+      <img loading="lazy" src="./assets/img/avtokran.jpg" alt="" />     
       <p class="chitdalP">Читать далее</p>
     </div>
     <div class="manipulatorUpperDiv" data-keyname="manipulator">    
       <p class="techName">Манипулятор</p>    
-      <img src="./assets/img/manipulator.jpg" alt="" />     
+      <img loading="lazy" src="./assets/img/manipulator.jpg" alt="" />     
       <p class="chitdalP">Читать далее</p>
     </div>
     <div class="jamoburUpperDiv" data-keyname="jamobur">
       <p class="techName">Ямобур</p>     
-      <img src="./assets/img/jamobur.png" alt="" />     
+      <img loading="lazy" src="./assets/img/jamobur.png" alt="" />     
       <p class="chitdalP">Читать далее</p>
     </div>
   </div>
@@ -56,22 +56,22 @@ const StartPage = {
   <div class="uslugi" data-keyname="zero">
     <div data-keyname="planirovka">
       <p class="techName">Планировка участка</p>
-      <img src="./assets/img/planirovka.jpg" alt="" />
+      <img loading="lazy" src="./assets/img/planirovka.jpg" alt="" />
       <p class="chitdalP">Читать далее</p>  
     </div>
     <div data-keyname="uborka">
       <p class="techName">Уборка и вывоз снега</p>
-      <img src="./assets/img/uborka.jpg" alt="" />
+      <img loading="lazy" src="./assets/img/uborka.jpg" alt="" />
       <p class="chitdalP">Читать далее</p>
     </div>
     <div data-keyname="demontazh">
       <p class="techName">Демонтаж строений</p>
-      <img src="./assets/img/demontazh.jpg" alt="" />
+      <img loading="lazy" src="./assets/img/demontazh.jpg" alt="" />
       <p class="chitdalP">Читать далее</p>
     </div>
     <div data-keyname="kopka">
       <p class="techName">Копка котлованов и траншей</p>
-      <img src="./assets/img/kopka.jpg" alt="" />
+      <img loading="lazy" src="./assets/img/kopka.jpg" alt="" />
       <p class="chitdalP">Читать далее</p>
     </div>
   </div>

@@ -14,7 +14,7 @@ const SpectechnikaPage = {
         <p class="spectechnikaPagePreisP">От <span class="spectechnikaPagePreis">2500</span> рублей/час</p>
         <div class="navlinksWrapper">
           <div class="spectechImage">
-            <img src="${srcPath[currentKeyName.currentKeyName]}" alt=""/>
+            <img loading="lazy" src="${srcPath[currentKeyName.currentKeyName]}" alt=""/>
           </div>
           <div class="navlinks" >
             <p class="navlinksP">Спецтехника:</p>
@@ -39,7 +39,7 @@ const SpectechnikaPage = {
            </div>
         </div>  
         <a href="#/" class="backBtnA"><div class="backBtn">
-          <img src="./assets/img/backBtn.png" alt="" class="backBtnImage" />
+          <img loading="lazy" src="./assets/img/backBtn.png" alt="" class="backBtnImage" />
         </div></a>
       </div>
     `;
